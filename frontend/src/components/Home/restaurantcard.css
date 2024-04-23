@@ -1,0 +1,71 @@
+.card {
+    width: 200px;
+    background-color: white;
+    border: none;
+
+    * {
+        text-align: start;
+    }
+    
+    .body {
+        img {
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            width: 200px;
+            height: 144px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .card-footer {
+        background-color: white;
+        width: inherit;
+        border: solid var(--grey) 1px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+
+        * {
+            color: var(--black-like);
+            font-size: 10px;
+            line-height: 16px;
+            margin: 0;
+        }
+
+        .reviews {
+            color: #7e7e7e;
+            font-weight: 500;
+        }
+
+        .place {
+            .location {
+                display: flex;
+                padding-block: 4px;
+                margin-top: 12px;                            
+            }
+        }
+
+        .title {
+            font-size: 14px;
+            color: var(--black-like);
+            font-weight: 600;
+        }
+
+        span {
+            font-weight: 500;
+        }
+
+        .close-span {
+            color: var(--red);
+        }
+
+        .open-span {
+            color: var(--green);
+        }
+    }
+}
+
+.location-icon {
+    width: 12px;
+    height: 20px;
+}
