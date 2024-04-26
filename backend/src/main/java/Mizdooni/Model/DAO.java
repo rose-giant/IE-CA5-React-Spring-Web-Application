@@ -1,41 +1,41 @@
 package Mizdooni.Model;
 
-import Mizdooni.Model.User.User;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.reflect.TypeToken;
-import org.apache.http.HttpEntity;
-import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClients;
-import org.apache.http.util.EntityUtils;
-
-import java.util.ArrayList;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.Scanner;
 
 public class DAO {
 
-    public String getRequest(String url){
-        final CloseableHttpClient httpClient = HttpClients.createDefault();
-        HttpGet request = new HttpGet(url);
+    public static String getRequest(String Url) throws Exception{
+        URL url = new URL(Url);
+        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setRequestMethod("GET");
+        conn.connect();
 
-        try (CloseableHttpResponse response = httpClient.execute(request)) {
-            HttpEntity entity = response.getEntity();
-            String result = "";
-            if (entity != null)
-                result = EntityUtils.toString(entity);
-            return result;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        //Check if connect is made
+        int responseCode = conn.getResponseCode();
+
+        // 200 OK
+        if (responseCode != 200) {
+            throw new RuntimeException("HttpResponseCode: " + responseCode);
+        } else {
+            StringBuilder informationString = new StringBuilder();
+            Scanner scanner = new Scanner(url.openStream());
+            while (scanner.hasNext()) {
+                informationString.append(scanner.nextLine());
+            }
+            scanner.close();
+            return informationString.toString();
         }
-
     }
 
-//    public ArrayList<User> getFromAPI() throws Exception{
+    //    public ArrayList<User> getFromAPI() throws Exception{
 //        String ObjectsJsonString = getRequest();
 //        Gson gson = new GsonBuilder().setPrettyPrinting().create();
 //        return gson.fromJson(ObjectsJsonString, new TypeToken<ArrayList<Object>>() {}.getType());
 //    }
 }
+
+
 
 

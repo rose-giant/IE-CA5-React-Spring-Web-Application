@@ -5,6 +5,7 @@ import Mizdooni.Model.User.User;
 import Mizdooni.Model.User.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -24,10 +25,10 @@ public class UserController {
     public ArrayList<User> getAll() {
         return userRepo.getAll();
     }
-//
+
 //    @GetMapping("/{id}")
-//    public LiveStream findById(@PathVariable String id) throws LiveStreamNotFoundException {
-//        return repository.findById(id);
+//    public User findById(@PathVariable String id) {
+//        return userRepo.findById(id);
 //    }
 //
 //    @ResponseStatus(HttpStatus.CREATED)

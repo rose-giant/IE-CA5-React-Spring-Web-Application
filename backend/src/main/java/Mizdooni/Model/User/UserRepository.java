@@ -1,6 +1,7 @@
 package Mizdooni.Model.User;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class UserRepository {
 
@@ -20,5 +21,14 @@ public class UserRepository {
 
     public ArrayList<User> getAll() {
         return users;
+    }
+
+    public User findUserByUserName(String userName) {
+        for(User user: users) {
+            if(Objects.equals(user.username, userName)) {
+                return user;
+            }
+        }
+        return null;
     }
 }
