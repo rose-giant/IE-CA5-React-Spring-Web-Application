@@ -1,39 +1,37 @@
-package Mizdooni.Model;
+package Mizdooni.Model.Review;
 
 
+import Mizdooni.Model.ResponseHandler;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import lombok.Getter;
 
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-
+@Getter
 public class Review {
-    public Double foodRate;
-    public Double serviceRate;
     public Double ambianceRate;
-    public Double overall;
     public String comment;
-    public String reviewDate;
-    public String username;
+    public Double foodRate;
+    public Double overallRate;
     public String restaurantName;
-    public ResponseHandler responseHandler = new ResponseHandler();
-    DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+    public Double serviceRate;
+    public String username;
 
-    public void unmarshalFromJson(String jsonString) throws JsonProcessingException {
-        ObjectMapper objectMapper = new ObjectMapper();
-        Review review = objectMapper.readValue(jsonString ,Review.class);
-        this.foodRate = review.foodRate;
-        this.serviceRate = review.serviceRate;
-        this.ambianceRate = review.ambianceRate;
-        this.overall = review.overall;
-        this.comment = review.comment;
-        this.username = review.username;
-        this.restaurantName = review.restaurantName;
-
-        LocalDateTime now = LocalDateTime.now();
-        this.reviewDate = dateTimeFormatter.format(now);
+    public Review(@JsonProperty("ambianceRate") Double ambianceRate,
+                  @JsonProperty("comment") String comment,
+                  @JsonProperty("foodRate") Double foodRate,
+                  @JsonProperty("overallRate") Double overallRate,
+                  @JsonProperty("restaurantName") String restaurantName,
+                  @JsonProperty("serviceRate") Double serviceRate,
+                  @JsonProperty("username") String username) {
+        this.ambianceRate = ambianceRate;
+        this.comment = comment;
+        this.foodRate = foodRate;
+        this.overallRate = overallRate;
+        this.restaurantName = restaurantName;
+        this.serviceRate = serviceRate;
+        this.username = username;
     }
 
     public boolean isRateValid(Double rate) {
@@ -62,7 +60,7 @@ public class Review {
             responseHandler1.responseBody += " ambiance rate range is not valid.";
         }
 
-        Boolean isOverallRateValid = isRateValid(this.overall);
+        Boolean isOverallRateValid = isRateValid(this.overallRate);
         if (!isOverallRateValid) {
             responseHandler1.responseBody += " overall rate range is not valid.";
         }
