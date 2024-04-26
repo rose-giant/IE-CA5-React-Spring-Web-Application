@@ -4,7 +4,10 @@ package Mizdooni.Controller;
 import Mizdooni.Model.User.User;
 import Mizdooni.Model.User.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 
 import java.util.ArrayList;
 
@@ -14,10 +17,10 @@ public class UserController {
 
     private final UserRepository userRepo;
     @Autowired
-    public UserController() {
-        this.userRepo = UserRepository.getInstance();
+    public UserController() throws Exception {
+        userRepo = UserRepository.getInstance();
     }
-    @GetMapping
+    @GetMapping("")
     public ArrayList<User> getAll() {
         return userRepo.getAll();
     }

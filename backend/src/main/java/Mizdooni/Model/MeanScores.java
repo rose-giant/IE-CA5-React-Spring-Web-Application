@@ -1,5 +1,6 @@
 package Mizdooni.Model;
 
+
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -11,7 +12,7 @@ public class MeanScores {
     public Integer numberOfReviews;
 
     @JsonCreator
-    public MeanScores(@JsonProperty("meanService") Double meanService,@JsonProperty("meanFood")  Double meanFood,@JsonProperty("meanAmbiance")  Double meanAmbiance, @JsonProperty("meanOverall") Double meanOverall) {
+    public MeanScores(@JsonProperty("meanService") Double meanService, @JsonProperty("meanFood")  Double meanFood, @JsonProperty("meanAmbiance")  Double meanAmbiance, @JsonProperty("meanOverall") Double meanOverall) {
         this.meanService = meanService;
         this.meanFood = meanFood;
         this.meanAmbiance = meanAmbiance;

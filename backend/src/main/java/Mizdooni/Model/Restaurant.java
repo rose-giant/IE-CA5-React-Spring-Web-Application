@@ -6,13 +6,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Objects;
-
 @JsonPropertyOrder({ "name", "managerUsername", "type", "startTime", "endTime", "description", "country", "city", "street"})
 public class Restaurant {
     public String name;

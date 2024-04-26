@@ -7,16 +7,16 @@ public class UserRepository {
     private static UserRepository instance;
     private ArrayList<User> users = new ArrayList<>();
 
-    public static UserRepository getInstance() {
+    public UserRepository() throws Exception {
+        UserDAO dao = new UserDAO();
+        users = dao.getFromAPI();
+    }
+
+    public static UserRepository getInstance() throws Exception {
         if(instance == null)
             return new UserRepository();
         else return instance;
     }
-
-    public void UserRepository() {
-        users.add(new User("role", "username", "password", "email", "city", "country"));
-    }
-
 
     public ArrayList<User> getAll() {
         return users;
