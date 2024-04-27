@@ -45,11 +45,9 @@ nav {
     }
 
     .inner-main {
-        width: 40%;
+        width: 50%;
         position: relative;
         top: 200px;
-        left: 12%;
-
 
         .logo {
             width: 360px;
@@ -72,7 +70,7 @@ nav {
                 * {
                     padding-inline: 16px;
                     padding-block: 8px;
-                    margin: 12px;
+                    margin: 4px;
                     border-radius: 12px;
                     border: none;
                 }
@@ -113,8 +111,7 @@ nav {
     align-items: center;
     justify-content: space-evenly;
     position: relative;
-    top: 1000px;
-
+   
     img {
         width: 474px;
         height: 439px;
