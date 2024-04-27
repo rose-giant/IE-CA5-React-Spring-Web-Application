@@ -1,0 +1,11 @@
+form {
+    width: 60%;
+    display: block;
+}
+
+button {
+    border-radius: 12px;
+    background-color: var(--peach-color);
+    color: white;
+    
+}
