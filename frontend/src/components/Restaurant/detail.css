@@ -1,0 +1,284 @@
+.contain {
+    width: 80%;
+    position: relative;
+    top: 64px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .card {
+        width: 50%;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-color: white;
+    
+        .body {
+            width: inherit;
+
+            img {
+                width: 200%;
+                height: 306px;
+                object-fit: cover;
+                object-position: center;
+                position: relative;
+                border-top-left-radius: 12px;
+                border-top-right-radius: 12px;
+            }
+
+            .banner-sub {
+                width: 200%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-inline: 4%;
+                padding-block: 2%;
+                background-color: rgb(241, 241, 241);
+                border-bottom-left-radius: 12px;
+                border-bottom-right-radius: 12px;
+
+                .title {
+                    background-color: rgba(white, white, white, 0.01);
+                    color: var(--black-like);
+                    font-size: 48px;
+                    font-size: 600;
+                }
+            }
+
+            button {
+                border: none;
+                width: 90px;
+                height: 33px;
+                background-color: var(--green);
+                color: white;
+                border-radius: 12px;
+                padding-left: 22px;
+                /* padding-bottom: 32px; */
+            }
+        }
+    
+        .card-footer {
+            padding: 2%;
+            border: none;
+            background-color: white;
+            
+            .detailed-info {
+                * {
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: var(--black-like);
+                }
+
+                img {
+                    margin-right: 12px;
+                }
+
+                display: flex;
+                align-items: start;
+                justify-content: space-between;
+                padding-right: 15%;
+            }
+    
+            .location {
+                display: flex;
+                
+                p {
+                    color: var(--light-grey);
+                    font-size: 16px;
+                }
+
+                img {
+                    margin-right: 12px;
+                }
+
+                margin-block: 18px;
+            }
+    
+            .description {
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 22px;
+                color: var(--black-like);
+            }
+        }
+    }
+
+    .reserve {
+        width: 60%;
+        padding-left: 5%;
+        position: relative;
+        bottom: 110px;
+
+        * {
+            padding-block: 1%;
+        }
+
+        .title {
+            font-size: 20px;
+            color: var(--black-like);
+            font-weight: 600;
+            padding-left: 5%;
+            text-align: start;
+        }
+
+        form {
+            .top {
+                position: relative;
+                right: 130px;
+                .enter {
+                    background-color: var(--very-light-grey);
+                    border: none;
+                    padding-inline: 18px;
+                    padding-block: 8px;
+                    border-radius: 8px;
+                    margin-inline: 8px;
+                }
+            }
+
+            .bottom {
+                display: block;
+
+                .title {
+                    color: black;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style: none;
+
+                    li {
+                        button {
+                            width: 156px;
+                            height: 40px;
+                            border-radius: 12px;
+                            border: none;
+                            border: solid 1px #ED3545;
+                            margin-inline: 4px;
+                            margin-block: 8px;
+                            background-color: white;
+                            color: var(--peach-color);
+                        }
+                    }
+                }
+
+                .sub {
+                    text-align: start;
+                    padding-left: 5%;
+                    color: var(--peach-color);
+                }
+
+                .completet {
+                    width: 90%;
+                    display: block;
+                    margin: auto;
+                    border: none;
+                    background-color: var(--peach-color);
+                    color: white;
+                    border-radius: 12px;
+                    padding-inline: 16px;
+                    padding-block: 8px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:973px){
+    body {
+        overflow-x: hidden;
+    }
+
+    .contain {
+        display: block;
+        width: 90%;
+        padding: 0;
+        margin: auto;
+        padding-left: 4%;
+
+        .card, .reserve {
+            width: inherit;
+            margin: auto;
+
+            .body {
+                img, .banner-sub {
+                    width: 100%;
+                    display: block;
+
+                    .title {
+                        width: 100%;
+                        font-size: 40px;
+                        margin: auto;
+                        text-align: start;
+                    }
+
+                    button {
+                        width: 120px;
+                        height: 40px;
+                        margin-block: 12px;
+                    }
+                }
+            }
+
+            .card-footer {
+                .detailed-info {
+                    font-size: 8px;
+                }
+            }
+        }
+
+        .reserve {
+            position: relative;
+            right: 2%;
+            bottom: 0;
+            top: 40px;
+            display: block;
+            margin: auto;
+            padding: 0;
+
+            form {
+                .top {
+                    display: block;
+                }
+
+                .bottom {
+                    ul {
+                        margin-left: 12px;
+                        padding: 0;
+
+                        li {
+                            button {
+                                width: 120px;
+                                margin-right: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.icon-clock {
+    width: 20px;
+    height: 24px;
+}
+
+.icon-review {
+    width: 20px;
+    height: 22px;
+}
+
+.icon-type {
+    width: 20px;
+    height: 27px;
+}
+
+.icon-location {
+    width: 15px;
+    height: 18px;
+    position: relative;
+    bottom: 2px;
+}
