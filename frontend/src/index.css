@@ -22,6 +22,14 @@ code {
     monospace;
 }
 
+button {
+  background-color: var(--peach-color);
+  color: white;
+  border-radius: 12px;
+  border: none;
+  padding: 6px;
+}
+
 :root {
   --peach-color: #ED3545;
   --brown-like: #861A24;
