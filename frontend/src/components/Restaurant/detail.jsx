@@ -1,10 +1,42 @@
-import React from "react";
-import { IsOpen } from "../Helpers/isOpen";
+import React, { useContext, useEffect, useState } from "react"
+import { IsOpen } from "../Helpers/isOpen"
 import "./detail.css"
-import ReviewList from "../Reviews/reviewList";
+import ReviewList from "../Reviews/reviewList"
+import { Context } from "../../App"
 
 export default function RestaurantDetail({ restaurant }) {
-    console.log(restaurant)
+    const [signedIn, setSignedIn] = useContext(Context)
+    const [date, setDate] = useState()
+    const [clickedIndex, setClickedIndex] = useState(null)
+    const [dates, setDates] = useState([])
+
+    const getAvailableTimes = () => {
+        const startTime = parseInt(restaurant.startTime.split(':')[0]);
+            const endTime = parseInt(restaurant.endTime.split(':')[0]);
+            const availableDates = [];
+            
+            for (let hour = startTime; hour <= endTime; hour++) {
+                const formattedHour = hour < 10 ? `0${hour}:00` : `${hour}:00`;
+                availableDates.push(formattedHour);
+            }
+            
+            setDates(availableDates)
+    }
+
+    const pickDate = (date, index) => {
+        setDate(date)
+        setClickedIndex(index)
+        console.log("index is ", index)
+    }
+
+    const handleSubmit = (event) => {
+        event.preventDefault()
+    }
+
+    useEffect(() => {
+        getAvailableTimes()
+    }, [])
+
     return(
         <>
         <div class="contain">
@@ -66,7 +98,7 @@ export default function RestaurantDetail({ restaurant }) {
             <div class="reserve">
                 <p class="title">Reserve Table</p>
 
-                <form action="">
+                <form action="" onSubmit={handleSubmit}>
                     <div class="top">
                         <label for="for">For&nbsp;</label>
                         <select class="enter" name="for" id="for">
@@ -83,54 +115,39 @@ export default function RestaurantDetail({ restaurant }) {
 
                     <div class="bottom">
                         <div class="title">Available Times for Table #1 (2 seats)</div>
-                        <ul>
-                            <li>
-                                <button>
-                                        11:00 PM
-                                </button>
-                            </li>
-                            <li>
-                                <button>
-                                        12:00 PM
-                                </button>
-                            </li>
-                            <li>
-                                <button>
-                                        13:00 PM
-                                </button>
-                            </li>
-                            <li>
-                                <button>
-                                        14:00 PM
-                                </button>
-                            </li>
-                            <li>
-                                <button>
-                                        15:00 PM
-                                </button>
-                            </li>
-                            <li>
-                                <button>
-                                        18:00 PM
-                                </button>
-                            </li>
-                            <li>
-                                <button>
-                                        19:00 PM
-                                </button>
-                            </li>
-                            <li>
-                                <button>
-                                        20:00 PM
-                                </button>
-                            </li>
-                        </ul>
+                        {
+                            signedIn === "" ?
+                            <ul>
+                                {dates.map((date, index) => (
+                                    <li key={index}>
+                                        <button style={{ backgroundColor: 'white', color: 'gray', borderColor: 'gray'}}>
+                                            {date}
+                                        </button>
+                                    </li>
+                                ))}
+                            </ul> :
+
+                            <ul>
+                                {dates.map((date, index) => (
+                                    <li key={index}>
+                                        <button style={{ backgroundColor: index === clickedIndex ? '#ED3545' : 'white', 
+                                        color: index === clickedIndex ? 'white' : '#ED3545' }}
+                                        onClick={() => pickDate(date, index)}>
+                                            {date}
+                                        </button>
+                                    </li>
+                                ))}
+                            </ul>
+                        }
 
                         <p class="sub">
                             You  will reserve this table  only for one  hour, for more time please contact the restaurant.
                         </p>
-
-                        <button class="completet">Complete the Reservation</button>
+                        {
+                            date == null ? <button class="passiveCompletet">Complete the Reservation</button> :
+                            <button class="completet">Complete the Reservation</button>
+                        }
+                        
                     </div>
                 </form>
             </div>

@@ -12,6 +12,8 @@
         border-top-left-radius: 12px;
         border-top-right-radius: 12px;
         border-color: white;
+        position: relative;
+        bottom: 32px;
     
         .body {
             width: inherit;
@@ -104,10 +106,10 @@
     }
 
     .reserve {
-        width: 60%;
-        padding-left: 5%;
+        width: 40%;
         position: relative;
-        bottom: 110px;
+        align-items: start;
+        justify-content: start;
 
         * {
             padding-block: 1%;
@@ -117,15 +119,29 @@
             font-size: 20px;
             color: var(--black-like);
             font-weight: 600;
-            padding-left: 5%;
             text-align: start;
         }
 
         form {
+            width: 100%;
+            align-items: start;
+            justify-content: space-evenly;
+            text-align: start;
+            
             .top {
-                position: relative;
-                right: 130px;
+                align-items: start;
+                justify-content: space-between;
+                text-align: start;
+                display: flex;
+
+                label {
+                    position: relative;
+                    bottom: 12px;
+                }
+               
                 .enter {
+                    width: 80%;
+                    display: flex;
                     background-color: var(--very-light-grey);
                     border: none;
                     padding-inline: 18px;
@@ -136,7 +152,10 @@
             }
 
             .bottom {
+                align-items: start;
+                justify-content: start;
                 display: block;
+                width: 100%;
 
                 .title {
                     color: black;
@@ -145,6 +164,9 @@
                 }
 
                 ul {
+                    width: 100%;
+                    margin: auto;
+                    padding: 0%;
                     display: flex;
                     flex-wrap: wrap;
                     list-style: none;
@@ -155,22 +177,26 @@
                             height: 40px;
                             border-radius: 12px;
                             border: none;
-                            border: solid 1px #ED3545;
+                            border: solid 1px var(--peach-color);
                             margin-inline: 4px;
                             margin-block: 8px;
                             background-color: white;
                             color: var(--peach-color);
+                        }
+
+                        button:hover, button:active {
+                            background-color: var(--peach-color);
+                            color: white;
                         }
                     }
                 }
 
                 .sub {
                     text-align: start;
-                    padding-left: 5%;
                     color: var(--peach-color);
                 }
 
-                .completet {
+                .completet, .passiveCompletet {
                     width: 90%;
                     display: block;
                     margin: auto;
@@ -180,6 +206,12 @@
                     border-radius: 12px;
                     padding-inline: 16px;
                     padding-block: 8px;
+                    position: relative;
+                    right: 32px;
+                }
+
+                .passiveCompletet {
+                    background-color: gray;
                 }
             }
         }
@@ -281,4 +313,15 @@
     height: 18px;
     position: relative;
     bottom: 2px;
+}
+
+.pickedDate {
+    background-color: var(--peach-color);
+    color: white;
+}
+
+.unsigned {
+    background-color: white;
+    color: gray;
+    border: solid 2px gray;
 }
