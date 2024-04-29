@@ -16,7 +16,10 @@
         padding-block: 18px;
 
         .left {
-            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 90%;
 
             .title {
                 font-size: 22px;
