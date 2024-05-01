@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
 import RestaurantCard from "./restaurantcard"
-import "./restaurantlist.css"
+import RestaurantDetail from "../Restaurant/detail"
 
 export default function RestaurantList() {
     const [restaurants, setRestaurants] = useState([])
@@ -36,7 +36,8 @@ export default function RestaurantList() {
         <ul>
           {restaurants.map((restaurant, index) => (
             <li key={index}>
-              <RestaurantCard restaurant={restaurant} />
+              {/* <RestaurantCard restaurant={restaurant} /> */}
+              <RestaurantDetail restaurant={restaurant}/>
             </li>
           ))}
       </ul>

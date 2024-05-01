@@ -4,15 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
-// const express = require("express")
-// const cors = require("cors")
-// const app = express()
-// app.use(
-//   cors({
-//     origin: "http://localhost:3000",
-//     methods:["GET", "POST", "PUT", "DELETE"],
-//   })
-// )
+const express = require("express")
+const cors = require("cors")
+const app = express()
+app.use(
+cors({
+ origin: "http://localhost:3000",
+ methods:["GET", "POST", "PUT", "DELETE"],
+})
+)
 
 // const lists = require("./lists.json")
 // app.use(express.json())
