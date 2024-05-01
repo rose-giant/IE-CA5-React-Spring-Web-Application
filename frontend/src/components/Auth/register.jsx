@@ -3,28 +3,29 @@ import React from "react"
 export default function Register() {
     return(
         <>
-             <form action="">
+             <form className="form-cotrol" action="">
                 <label htmlFor="username">Username</label>
-                <input type="text" />
+                <input className="input-group" type="text" />
 
                 <label htmlFor="email">Email</label>
-                <input type="email" />
+                <input className="input-group" type="email" />
 
                 <label htmlFor="country">Country</label>
-                <input type="text" />
+                <input className="input-group" type="text" />
 
                 <label htmlFor="city">City</label>
-                <input type="text" />
+                <input className="input-group" type="text" />
 
                 <label htmlFor="password">Password</label>
-                <input type="password" />
+                <input className="input-group" type="password" />
 
-                <label htmlFor="">I'm a new &nbsp;</label>
-                <label htmlFor="Customer">Customer</label>
-                <input type="radio" id="c"/>
-                <label htmlFor="Manager">Manager</label>
-                <input type="radio" id="m"/>
+                <div className="radios">
+                        <label htmlFor="I'm a new Customer">Customer</label>
+                        <input className="input-group" type="radio" id="c"/>
 
+                        <label htmlFor="Manager">Manager</label>
+                        <input className="input-group" type="radio" id="m"/>
+                </div>
                 <button type="submit">Register</button>
             </form>
         </>

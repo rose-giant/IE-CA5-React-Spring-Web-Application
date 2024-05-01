@@ -1,6 +1,11 @@
 import React from "react"
+import { useContext } from "react"
+import "./../Home/home.css"
+import { Context } from "../../App"
 
 export default function Nav() {
+    const [signedIn, setSignedIn] = useContext(Context)
+
     return (
         <nav class="navbar px-5 py-2">
             <div class="nav-left">
@@ -14,9 +19,12 @@ export default function Nav() {
             </div>
 
             <div class="nav-right">
-                <button class="btn nav-btn">Reserve Now!</button>
+            {
+                signedIn === "" ? "" :
+                <p>Hello {signedIn}!</p> 
+            }
+            <button class="btn nav-btn">Reserve Now!</button>
             </div>
-
         </nav>
     )
 }

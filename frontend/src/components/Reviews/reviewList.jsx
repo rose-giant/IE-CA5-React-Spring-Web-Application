@@ -3,8 +3,10 @@ import ReviewItem from "./reviewItem"
 import axios from "axios"
 import { useState, useEffect } from "react"
 import "./reviews.css"
+import ReviewModal from "./../Helpers/testmodal"
 
 export default function ReviewList({ restaurantName }) {
+    const [isModalOpen, setIsModalOpen] = useState(false)
     const [reviews, setreviews] = useState([])
     const review = {
         ambianceRate:4,
@@ -50,6 +52,8 @@ export default function ReviewList({ restaurantName }) {
                                 4 based on recent ratings
                             </div>
                         </div>
+                        <button onClick={() => setIsModalOpen(true)}>Add Review</button>
+                        <ReviewModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
                     </div>
                 </div>
 
