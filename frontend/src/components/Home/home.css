@@ -3,6 +3,9 @@
 }
 
 nav {
+    position: fixed;
+    top: 0;
+    
     .nav-left {
         display: flex;
     
@@ -169,7 +172,7 @@ ul {
     color: var(--black-like);
     margin-left: 140px;
     position: relative;
-    bottom: 40px;
+    bottom: 60px;
 }
 
 Footer {

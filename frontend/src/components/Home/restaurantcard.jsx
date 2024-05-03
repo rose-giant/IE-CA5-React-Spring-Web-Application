@@ -1,8 +1,23 @@
-import React from "react"
+import React, { useEffect } from "react"
 import "./restaurantcard.css"
 import { IsOpen } from "../Helpers/isOpen"
+import RestaurantDetail from "../Restaurant/detail"
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
+import { useNavigate } from "react-router-dom"
+import { useState } from "react"
 
 export default function RestaurantCard({ restaurant }) {
+    const navigate = useNavigate()
+    const [path, setPath] = useState("")
+    // const handleClick = (name) => {
+    //     // e.preventDefault()
+    //     console.log(name)
+    //     navigate(`/restaurant/${name}`)
+    // }
+
+    // useEffect(() => {
+    //     console.log(path)
+    // }, path)
         
     return(
         <>

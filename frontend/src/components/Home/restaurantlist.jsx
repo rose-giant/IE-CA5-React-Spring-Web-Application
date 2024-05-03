@@ -37,7 +37,6 @@ export default function RestaurantList() {
             {restaurants.slice(0, 6).map((restaurant, index) => (
               <li key={index}>
                 <RestaurantCard restaurant={restaurant} />
-                {/* <RestaurantDetail restaurant={restaurant}/> */}
               </li> 
             ))}
           </ul>
@@ -47,11 +46,10 @@ export default function RestaurantList() {
               {restaurants.slice(6, 12).map((restaurant, index) => (
                 <li key={index}>
                   <RestaurantCard restaurant={restaurant} />
-                  {/* <RestaurantDetail restaurant={restaurant}/> */}
                 </li> 
               ))}
           </ul>
           <p className="list-titles">You Might Also Like</p>
-      </div>
+        </div>
     )
 }

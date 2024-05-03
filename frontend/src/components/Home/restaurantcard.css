@@ -91,3 +91,9 @@
     width: 11.2px;
     height: 12px;
 }
+
+.rest-link {
+    text-decoration: none;
+    position: relative;
+    right: 12px;
+}
