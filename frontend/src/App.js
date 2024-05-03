@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ReviewList from "./components/Reviews/reviewList"
 import InitUser from './components/Auth/init'
 import 'bootstrap/dist/css/bootstrap.css'
-import Manager from './components/User/Manager'
+//import Manager from './components/User/Manager'
 import Nav from './components/Nav/nav'
 import Footer from './components/Footer/footer'
 import RestaurantDetail from "./components/Restaurant/detail"
