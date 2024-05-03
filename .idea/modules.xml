@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/React-Web-Application-Back-end-API.iml" filepath="$PROJECT_DIR$/.idea/React-Web-Application-Back-end-API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/React-Web-Application-Back-end-API.iml" filepath="$PROJECT_DIR$/React-Web-Application-Back-end-API.iml" />
     </modules>
   </component>
 </project>

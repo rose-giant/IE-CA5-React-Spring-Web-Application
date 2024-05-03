@@ -1,6 +1,5 @@
 .homepage {
     display: block;
-    
 }
 
 nav {
@@ -48,6 +47,7 @@ nav {
 
     .cover {
         position: absolute;
+        top: 120px;
         width: 100vw;
         height: 830px;
         object-fit: cover;
@@ -57,7 +57,7 @@ nav {
     .inner-main {
         width: 50%;
         position: relative;
-        top: 200px;
+        top: 0px;
 
         .logo {
             width: 360px;
@@ -72,6 +72,7 @@ nav {
             justify-content: center;
 
             form {
+                width: 110%;
                 flex-wrap: wrap;
                 display: flex;
                 align-items: center;
@@ -115,12 +116,14 @@ nav {
 }
 
 .about {
-    width: 84%;
+    width: 90%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     position: relative;
+    right: 4%;
+    top: 300px;
    
     img {
         width: 474px;
@@ -146,4 +149,30 @@ nav {
         }
     }
 
+}
+
+ul {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        margin-inline: 24px;
+        margin-block: 18px;
+    }
+}
+
+.list-titles {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black-like);
+    margin-left: 140px;
+    position: relative;
+    bottom: 40px;
+}
+
+Footer {
+    position: relative;
+    top: 280px;
 }

@@ -7,6 +7,7 @@ import Nav from './components/Nav/nav'
 import Footer from './components/Footer/footer'
 import RestaurantDetail from "./components/Restaurant/detail"
 import RestaurantList from "./components/Home/restaurantlist"
+import HomePage from './pages/Home'
 
 export const Context = React.createContext()
 
