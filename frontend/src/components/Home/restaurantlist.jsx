@@ -20,7 +20,7 @@ export default function RestaurantList() {
         type: "American"}
 
     useEffect(() => {
-        axios.get("http://91.107.137.117:55/restaurants")
+        axios.get("http://localhost:8080/restaurants")
           .then(response => {
             setRestaurants(response.data);
           })
@@ -28,7 +28,7 @@ export default function RestaurantList() {
             console.error("Error fetching restaurants:", error);
           });
           
-          setRestaurants([restaurant])
+//           setRestaurants([restaurant])
       }, restaurants, restaurant)
 
     return(

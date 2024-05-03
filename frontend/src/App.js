@@ -32,8 +32,8 @@ const App = () => {
       {/* <ReviewList restaurantName={"The Commoner"}/> */}
       {/* <InitUser />
       <Manager /> */}
-      {/* <RestaurantList /> */}
-      <RestaurantDetail restaurant={restaurant}/>
+      <RestaurantList />
+      {/* <RestaurantDetail restaurant={restaurant}/> */}
       <Footer />
     </Context.Provider>
   );
