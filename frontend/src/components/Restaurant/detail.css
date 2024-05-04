@@ -12,8 +12,8 @@
         border-top-left-radius: 12px;
         border-top-right-radius: 12px;
         border-color: white;
-        position: relative;
-        bottom: 32px;
+        position: absolute;
+        top: 0;
     
         .body {
             width: inherit;
@@ -107,7 +107,9 @@
 
     .reserve {
         width: 40%;
-        position: relative;
+        position: absolute;
+        right: 0;
+        top: 0;
         align-items: start;
         justify-content: start;
 
@@ -216,6 +218,11 @@
             }
         }
     }
+}
+
+.review-sec {
+    position: relative;
+    top: 80vh;
 }
 
 @media screen and (max-width:973px){
