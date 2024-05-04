@@ -28,13 +28,13 @@ export default function ReviewItem({review}) {
             </div>
 
             <div class="right">
-                {/* <div class="stars">
-                    <img class="staricon" src="./../assets/icons/svg/pinkstar.svg" alt="">
-                    <img class="staricon" src="./../assets/icons/svg/pinkstar.svg" alt="">
-                    <img class="staricon" src="./../assets/icons/svg/pinkstar.svg" alt="">
-                    <img class="staricon" src="./../assets/icons/svg/pinkstar.svg" alt="">
-                    <img class="staricon" src="./../assets/icons/svg/star-rate-rating-outline-svgrepo-com.svg" alt="">
-                </div> */}
+                <div class="stars">
+                    <img class="staricon" src="./../icons/svg/pinkstar.svg" alt=""/>
+                    <img class="staricon" src="./../icons/svg/pinkstar.svg" alt=""/>
+                    <img class="staricon" src="./../icons/svg/pinkstar.svg" alt=""/>
+                    <img class="staricon" src="./../icons/svg/pinkstar.svg" alt=""/>
+                    <img class="staricon" src="./../icons/svg/star-rate-rating-outline-svgrepo-com.svg" alt=""/>
+                </div>
 
                 <p class="date">
                     Dined on February 17, 2024
