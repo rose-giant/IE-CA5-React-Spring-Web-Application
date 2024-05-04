@@ -35,9 +35,10 @@ const App = () => {
       <Nav />
           <Routes>
             <Route path="/restaurant/:name" element={<RestaurantDetail />} />
-            <Route path="/search/" element={<Search />} />
             <Route path="/manager/" element={<Manager />} />
+            <Route path="/search/" element={<Search />} />
             <Route path='/' element={<HomePage />} />
+            <Route path="/init" element={<InitUser />}/>
           </Routes>
 
       </Context.Provider>
