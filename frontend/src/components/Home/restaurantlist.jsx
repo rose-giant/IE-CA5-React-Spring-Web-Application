@@ -9,15 +9,16 @@ export default function RestaurantList() {
     useEffect(() => {
         axios.get("http://localhost:8080/restaurants")
           .then(response => {
-            setRestaurants(response.data);
+            setRestaurants(response.data)
           })
           .catch(error => {
             console.error("Error fetching restaurants:", error);
-          });
+          })
       }, restaurants)
 
     return(
         <div>
+          <p className="list-titles">Top Restaurants in Mizdooni</p>
           <ul>
             {restaurants.slice(0, 6).map((restaurant, index) => (
               <li key={index}>
@@ -25,8 +26,8 @@ export default function RestaurantList() {
               </li> 
             ))}
           </ul>
-          <p className="list-titles">Top Restaurants in Mizdooni</p>
-          
+         
+          <p className="list-titles">You Might Also Like</p>
           <ul>
               {restaurants.slice(6, 12).map((restaurant, index) => (
                 <li key={index}>
@@ -34,7 +35,6 @@ export default function RestaurantList() {
                 </li> 
               ))}
           </ul>
-          <p className="list-titles">You Might Also Like</p>
         </div>
     )
 }

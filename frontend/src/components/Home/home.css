@@ -50,7 +50,7 @@ nav {
 
     .cover {
         position: absolute;
-        top: 120px;
+        top: 100px;
         width: 100vw;
         height: 830px;
         object-fit: cover;
@@ -118,6 +118,41 @@ nav {
     }
 }
 
+@media screen and (max-width: 678px) {
+    .hero {
+        .cover {
+            object-position:right;
+            height: 400px;
+        }
+
+        .inner-main {
+            width: 100%;
+            height: fit-content;
+            display: block;
+            margin: auto;
+            position: relative;
+            left: 0;
+            top: 0;
+
+            .logo {
+                display: none;
+            }
+
+            .bottom-nav {
+                margin: auto;
+                display: block;
+
+                form {
+                    align-items: center;
+                    justify-content: space-evenly;
+                    display: block;
+                    padding-top: 80px;
+                }
+            }
+        }
+    }
+}
+
 .about {
     width: 90%;
     margin: auto;
@@ -126,7 +161,7 @@ nav {
     justify-content: space-evenly;
     position: relative;
     right: 4%;
-    top: 300px;
+    top: 100px;
    
     img {
         width: 474px;
@@ -154,6 +189,26 @@ nav {
 
 }
 
+@media screen and (max-width: 778px) {
+    .about {
+        width: 100%;
+        margin: auto;
+        display: block;
+
+        img {
+            display: block;
+            margin: auto;
+            width: 90%;
+        }
+
+        .content {
+            text-align: start;
+            margin: auto;
+            width: 80%;
+        }
+    }
+}
+
 ul {
     width: 90%;
     margin: auto;
@@ -170,9 +225,14 @@ ul {
     font-size: 16px;
     font-weight: 400;
     color: var(--black-like);
-    margin-left: 140px;
     position: relative;
-    bottom: 60px;
+    margin-left: 140px;
+}
+
+@media screen and (max-width: 678px) {
+    .list-titles {
+        margin-left: 0;
+    }
 }
 
 Footer {

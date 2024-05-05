@@ -20,7 +20,7 @@ const App = () => {
   return (
     <Router>
       <Context.Provider value={[signedIn, setSignedIn]} className="App">
-      
+          <Nav />
           <Routes>
             <Route path="/restaurant/:name" element={<RestaurantDetail />} />
             <Route path="/manage/:name" element={<ManageReastaurant />} />
