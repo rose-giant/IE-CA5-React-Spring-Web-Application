@@ -16,10 +16,11 @@ export const Context = React.createContext()
 
 const App = () => {
   const [signedIn, setSignedIn] = useState("")
+  const [role, setRole] = useState("")
       
   return (
     <Router>
-      <Context.Provider value={[signedIn, setSignedIn]} className="App">
+      <Context.Provider value={[signedIn, setSignedIn, role, setRole]} className="App">
           <Nav />
           <Routes>
             <Route path="/restaurant/:name" element={<RestaurantDetail />} />
