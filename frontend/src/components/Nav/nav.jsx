@@ -5,7 +5,8 @@ import { Context } from "../../App"
 import { useNavigate } from "react-router-dom"
 
 export default function Nav() {
-    const [signedIn, setSignedIn] = useContext(Context)
+    const [signedIn, setSignedIn, role] = useContext(Context)
+    
     const navigate = useNavigate()
     const handleNavigation = () => {
         navigate("/")
@@ -26,9 +27,14 @@ export default function Nav() {
             <div className="nav-right">
             {
                 signedIn === "" ? "" :
-                <p>Hello {signedIn}!</p> 
+                <p>Welcome {signedIn}!</p> 
             }
-            <button className="btn nav-btn">Reserve Now!</button>
+            {
+                signedIn === "" ? <button className="btn nav-btn">Reserve Now!</button> :
+                role === "manager"? <button className="btn nav-btn">My Restaurants</button>
+                :<button className="btn nav-btn">My Reservations</button>
+            }
+            
             </div>
         </nav>
     )
