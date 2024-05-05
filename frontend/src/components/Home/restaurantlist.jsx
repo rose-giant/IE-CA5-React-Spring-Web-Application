@@ -9,11 +9,11 @@ export default function RestaurantList() {
     useEffect(() => {
         axios.get("http://localhost:8080/restaurants")
           .then(response => {
-            setRestaurants(response.data);
+            setRestaurants(response.data)
           })
           .catch(error => {
             console.error("Error fetching restaurants:", error);
-          });
+          })
       }, restaurants)
 
     return(
