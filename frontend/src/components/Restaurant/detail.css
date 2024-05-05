@@ -2,6 +2,7 @@
     width: 80%;
     position: relative;
     top: 64px;
+    height: 100vh;
     margin: auto;
     display: flex;
     align-items: center;
@@ -220,11 +221,6 @@
     }
 }
 
-.review-sec {
-    position: relative;
-    top: 80vh;
-}
-
 @media screen and (max-width:973px){
     body {
         overflow-x: hidden;
@@ -331,4 +327,8 @@
     background-color: white;
     color: gray;
     border: solid 2px gray;
+}
+
+.reserve-btn {
+    width: 50px;
 }
