@@ -68,6 +68,7 @@
         }
 
         .title {
+            cursor: pointer;
             font-size: 14px;
             color: var(--black-like);
             font-weight: 400;
