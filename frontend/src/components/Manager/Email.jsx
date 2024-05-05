@@ -4,7 +4,6 @@ import "./../Home/home.css"
 import { Context } from "../../App"
 
 export default function Email({email}) {
-    const [signedIn, setSignedIn] = useContext(Context)
 
     return (
         <div className="inline-cell notif">

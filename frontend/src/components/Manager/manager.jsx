@@ -1,7 +1,6 @@
 import React, { useContext, useState, useEffect } from "react"
 import "./manager.css"
 import { Context } from "../../App"
-import ManagerNav from "./managerNav"
 import Footer from "../Footer/footer"
 import axios from "axios"
 import Email from "./Email"
@@ -13,7 +12,7 @@ export default function Manager() {
     const [signedIn, setSignedIn, role, setRole] = useContext(Context)
 
     setSignedIn("amin")
-    setRole("customer")
+    setRole("manager")
 
     const [manager, setManager] = useState(null)
 
@@ -25,18 +24,20 @@ export default function Manager() {
             .catch(error => {
                 console.error("Error fetching users:", error);
             });
-    }, [])
+    }, [manager])
 
-    console.log(role)
+    // console.log(manager)
+    // console.log(manager.username )
 
     return (
         <>
+        {manager && (
             <div >
-                <Email email={manager && manager.email}/>
-                <ManagerRestaurants/>
+                <Email email={manager.email}/>
+                <ManagerRestaurants managerName = {manager.username}/>
                 <Footer />
             </div>
-            
+        )}            
         </>
     )
 }
