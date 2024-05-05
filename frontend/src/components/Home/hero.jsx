@@ -15,12 +15,12 @@ export default function Hero() {
 
     return(
         <div className="container">
-            <div class="hero">
-                    <img class="cover" src="./covers/pizzaaa.png" alt=""/>
-                    <div class="inner-main">
-                        <img class="logo" src="./logo/logo.png" alt=""/>
+            <div className="hero">
+                    <img className="cover" src="./covers/pizzaaa.png" alt=""/>
+                    <div className="inner-main">
+                        <img className="logo" src="./logo/logo.png" alt=""/>
 
-                        <div class="bottom-nav">
+                        <div className="bottom-nav">
                             <form action="./Search/Search.html" method="" onSubmit={handleSearch}>
                                 <select name="Location" id="location" value={location} onChange={(e) => setLocation(e.target.value)}>
                                     <option>America</option>
