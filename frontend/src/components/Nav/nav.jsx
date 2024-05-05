@@ -34,7 +34,6 @@ export default function Nav() {
                 role === "manager"? <button className="btn nav-btn">My Restaurants</button>
                 :<button className="btn nav-btn">My Reservations</button>
             }
-            
             </div>
         </nav>
     )
