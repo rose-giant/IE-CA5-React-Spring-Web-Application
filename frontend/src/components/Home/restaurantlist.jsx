@@ -18,6 +18,7 @@ export default function RestaurantList() {
 
     return(
         <div>
+          <p className="list-titles">Top Restaurants in Mizdooni</p>
           <ul>
             {restaurants.slice(0, 6).map((restaurant, index) => (
               <li key={index}>
@@ -25,8 +26,8 @@ export default function RestaurantList() {
               </li> 
             ))}
           </ul>
-          <p className="list-titles">Top Restaurants in Mizdooni</p>
-          
+         
+          <p className="list-titles">You Might Also Like</p>
           <ul>
               {restaurants.slice(6, 12).map((restaurant, index) => (
                 <li key={index}>
@@ -34,7 +35,6 @@ export default function RestaurantList() {
                 </li> 
               ))}
           </ul>
-          <p className="list-titles">You Might Also Like</p>
         </div>
     )
 }
