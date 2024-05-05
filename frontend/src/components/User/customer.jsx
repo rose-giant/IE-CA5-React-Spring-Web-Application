@@ -7,13 +7,13 @@ export default function Customer({user}) {
             <section className="container main">
                 <div className="inline-cell notif">
                     <div className="content">
-                        <div classNameName="left">
+                        <div className="left">
                             <p className="text">Your reservations are also emailed to </p>
                             &nbsp;
                             <a className="red" href={"mailto:"+user.email}> {user.email} </a>
                         </div>
                         
-                        <div classNameName="right">
+                        <div className="right">
                             <p className="address">
                             Address: {user.address.city},&nbsp;{user.address.country}
                             </p>

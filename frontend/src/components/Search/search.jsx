@@ -18,7 +18,6 @@ export default function Search() {
     const searchParam = searchParams.get('search')
     const [currentPage, setCurrentPage] = useState(1)
     const itemsPerPage = 6
-
     const [restaurants, setRestaurants] = useState([])
 
     useEffect(() => {
