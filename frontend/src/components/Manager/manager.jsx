@@ -10,12 +10,11 @@ import ManagerRestaurants from "./managerRestaurants"
 
 
 export default function Manager() {
-    const [signedIn, setSignedIn] = useContext(Context)
+    const [signedIn, setSignedIn, role, setRole] = useContext(Context)
 
     setSignedIn("amin")
+    setRole("customer")
 
-    const [users, setUsers] = useState(null)
-    const [restaurants, setRestaurants] = useState([])
     const [manager, setManager] = useState(null)
 
     useEffect(() => {
@@ -28,26 +27,13 @@ export default function Manager() {
             });
     }, [])
 
-    useEffect(() => {
-        axios.get("http://localhost:8080/restaurants")
-          .then(response => {
-            setRestaurants(response.data.filter(rest => rest.managerUsername == signedIn));
-        })
-          .catch(error => {
-            console.error("Error fetching restaurants:", error);
-          });
-    }, restaurants)
-
-    // console.log(users)
-    // console.log(manager)
-    //console.log(restaurants)
+    console.log(role)
 
     return (
         <>
             <div >
-                <ManagerNav />
                 <Email email={manager && manager.email}/>
-                <ManagerRestaurants restaurants={restaurants}/>
+                <ManagerRestaurants/>
                 <Footer />
             </div>
             

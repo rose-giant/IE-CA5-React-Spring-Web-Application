@@ -1,9 +1,25 @@
-import React, { useState } from "react"
+import React, { useContext, useState, useEffect } from "react"
+import { Context } from "../../App"
 import { useNavigate } from "react-router-dom"
+import axios from "axios"
 import "./manager.css"
 
-export default function ManagerRestaurants({ restaurants }) {
+export default function ManagerRestaurants() {
 
+    const [restaurants, setRestaurants] = useState([])
+    const [signedIn, setSignedIn] = useContext(Context)
+
+    useEffect(() => {
+        axios.get("http://localhost:8080/restaurants")
+          .then(response => {
+            setRestaurants(response.data.filter(rest => rest.managerUsername == signedIn));
+        })
+          .catch(error => {
+            console.error("Error fetching restaurants:", error);
+          });
+    }, restaurants)
+
+    // console.log(restaurants);
     const navigate = useNavigate()
     const handleManage = (e, restaurantName) => {
         // e.preventDefault()   
