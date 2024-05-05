@@ -1,54 +1,57 @@
-import React, { useContext, useState } from "react"
+import React, { useContext, useState, useEffect } from "react"
 import "./manager.css"
-import { useContext } from "react"
 import { Context } from "../../App"
+import ManagerNav from "./managerNav"
+import Footer from "../Footer/footer"
+import axios from "axios"
+import Email from "./Email"
+import ManagerRestaurants from "./managerRestaurants"
+
+
 
 export default function Manager() {
     const [signedIn, setSignedIn] = useContext(Context)
+
+    setSignedIn("amin")
+
     const [users, setUsers] = useState([])
+    const [restaurants, setRestaurants] = useState([])
     const [manager, setManager] = useState([])
+
     useEffect(() => {
-        axios.get("http://91.107.137.117:55/users")
+        axios.get("http://localhost:8080/users")
+            .then(response => {
+                setManager(response.data.filter(user => user.username == signedIn)[0])
+                setUsers(response.data)
+            })
+            .catch(error => {
+                console.error("Error fetching users:", error);
+            });
+    }, [])
+
+    useEffect(() => {
+        axios.get("http://localhost:8080/restaurants")
           .then(response => {
-            setUsers(response.data)
-          })
+            setRestaurants(response.data.filter(rest => rest.managerUsername == signedIn));
+            // setRestaurants(response.data)
+        })
           .catch(error => {
-            console.error("Error fetching users:", error);
+            console.error("Error fetching restaurants:", error);
           });
+    }, restaurants)
 
-          setUsers([review])
-          setManager(users => {
-            return users.filter(user => user.username === signedIn)
-          })
-      }, [])
+    // console.log(users)
+    // console.log(manager)
+    // console.log(restaurants)
 
-    return(
+    return (
         <>
-        <div class="restaurants">
-        <table class="table">
-           <thead>
-                <th>
-                    My Restaurants
-                </th>
-
-                <th>
-                    <button className="t-btn">Add</button>
-                </th>
-           </thead>
-           <hr />
-           <tbody>
-                <td>
-                    Ali Daei
-                </td>
-        
-                <td>
-                    <button className="t-btn">
-                        Manage
-                    </button>
-                </td>
-           </tbody>
-        </table>
-    </div>
+            <div className="homepage">
+                <ManagerNav />
+                <Email email={manager.email}/>
+                <ManagerRestaurants restaurants={restaurants}/>
+            </div>
+            <Footer />
         </>
     )
 }

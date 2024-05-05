@@ -19,7 +19,7 @@ export default function ReviewList({ restaurantName }) {
     }
 
     useEffect(() => {
-        axios.get("http://91.107.137.117:55/reviews")
+        axios.get("http://localhost:8080/reviews")
           .then(response => {
             setreviews(response.data)
           })

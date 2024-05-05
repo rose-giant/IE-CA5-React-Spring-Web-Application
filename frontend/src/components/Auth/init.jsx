@@ -32,7 +32,7 @@ export default function InitUser() {
     }
 
     useEffect(() => {
-        axios.get("http://91.107.137.117:55/users")
+        axios.get("http://localhost:8080/users")
           .then(response => {
             setUsers(response.data);
           })

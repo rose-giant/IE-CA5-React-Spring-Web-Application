@@ -3,6 +3,7 @@ import { IsOpen } from "../Helpers/isOpen"
 import "./detail.css"
 import ReviewList from "../Reviews/reviewList"
 import { Context } from "../../App"
+import Nav from "../Nav/nav"
 
 export default function RestaurantDetail({ restaurant }) {
     const [signedIn, setSignedIn] = useContext(Context)
@@ -39,6 +40,9 @@ export default function RestaurantDetail({ restaurant }) {
 
     return(
         <>
+        <div className="homepage">
+            <Nav /> 
+        </div>
         <div class="contain">
             <div class="card show">
                 <div class="header">

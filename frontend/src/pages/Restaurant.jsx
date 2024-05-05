@@ -20,7 +20,7 @@ export default function RestaurantPage({restaurant}) {
         type: "American"}
 
     useEffect(() => {
-        axios.get("http://91.107.137.117:55/restaurants")
+        axios.get("http://localhost:8080/restaurants")
           .then(response => {
             response.data.forEach(restaurant => {
                 if (restaurant.name === "raz") {

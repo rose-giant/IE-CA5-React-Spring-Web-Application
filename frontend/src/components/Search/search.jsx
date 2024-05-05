@@ -35,7 +35,7 @@ export default function Search() {
         type: "American"}
 
     useEffect(() => {
-        axios.get("http://91.107.137.117:55/restaurants")
+        axios.get("http://localhost:8080/restaurants")
           .then(response => {
             setRestaurants(response.data);
           })
@@ -60,7 +60,11 @@ export default function Search() {
     const currentItems = filteredRestaurants.slice(indexOfFirstItem, indexOfLastItem);
 
     return(
+        
         <>
+        <div className="homepage">
+            <Nav /> 
+        </div>
         <div className="search-container">
           <ul>
             {currentItems.map((restaurant, index) => (
