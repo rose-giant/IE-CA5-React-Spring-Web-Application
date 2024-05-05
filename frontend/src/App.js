@@ -24,7 +24,7 @@ const App = () => {
           <Nav />
           <Routes>
             <Route path="/restaurant/:name" element={<RestaurantDetail />} />
-            <Route path="/manage/:name" element={<ManageReastaurant />} />
+            <Route path="/manage/:restaurantName" element={<ManageReastaurant />} />
             <Route path="/manager/" element={<Manager />} />
             <Route path="/search/" element={<Search />} />
             <Route path='/' element={<HomePage />} />
