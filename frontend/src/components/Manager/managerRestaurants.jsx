@@ -1,9 +1,10 @@
-// import React, { useEffect, useState } from "react"
-// import axios from "axios"
-// import RestaurantCard from "./restaurantcard"
-// import RestaurantDetail from "../Restaurant/detail"
+import React, { useState } from "react"
+import { useNavigate } from "react-router-dom"
+import "./manager.css"
 
 export default function ManagerRestaurants({ restaurants }) {
+
+    const navigate = useNavigate()
 
     return (
         <div class="restaurants">
@@ -22,7 +23,7 @@ export default function ManagerRestaurants({ restaurants }) {
                         <div class="inline-cell">
                             <p class="bold">{restaurant.name} </p>
                             <p class="bold">{restaurant.address.city}, {restaurant.address.country} </p>
-                            <a class="red-btn btn" href="ManagerManage.html">Manage</a>
+                            <form class="red-btn btn" onSubmit={(e) => navigate(`/restaurant/${restaurant.name}`)}>Manage</form>
                         </div>
                     </li> 
                     ))}

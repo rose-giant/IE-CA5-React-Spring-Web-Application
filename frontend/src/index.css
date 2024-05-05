@@ -319,12 +319,7 @@ footer {
       left: 50%;
       font-size: 70%;
   }
-  .inline-cell{
-      display: block;
-      padding-top: 1%;
-      padding-bottom: 0;
-      padding-left: 2%;
-  }
+  
   .footer{
       font-size: 70%;
       height: 4%;

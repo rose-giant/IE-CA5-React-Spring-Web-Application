@@ -91,6 +91,15 @@ body {
     padding-inline: 10px;
 }
 
+.inline-cell{
+    display: flex;
+    padding-inline: 30px;
+    padding-top: 1%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+
 .grid-container {
     display: grid;
     gap: 5px;
@@ -112,6 +121,7 @@ body {
         margin: 0;
     }
 }
+
 
 @media screen and (max-width:1200px) {
     .grid-container {

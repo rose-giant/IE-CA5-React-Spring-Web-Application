@@ -46,12 +46,15 @@ export default function Manager() {
 
     return (
         <>
-            <div className="homepage">
+            <div >
                 <ManagerNav />
+                {manager && (
                 <Email email={manager.email}/>
+                )}
                 <ManagerRestaurants restaurants={restaurants}/>
+                <Footer />
             </div>
-            <Footer />
+            
         </>
     )
 }
