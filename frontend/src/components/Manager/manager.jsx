@@ -14,15 +14,14 @@ export default function Manager() {
 
     setSignedIn("amin")
 
-    const [users, setUsers] = useState([])
+    const [users, setUsers] = useState(null)
     const [restaurants, setRestaurants] = useState([])
-    const [manager, setManager] = useState([])
+    const [manager, setManager] = useState(null)
 
     useEffect(() => {
         axios.get("http://localhost:8080/users")
             .then(response => {
-                setManager(response.data.filter(user => user.username == signedIn)[0])
-                setUsers(response.data)
+                setManager(response.data.filter(user => user.username == signedIn)[0]);
             })
             .catch(error => {
                 console.error("Error fetching users:", error);
@@ -33,7 +32,6 @@ export default function Manager() {
         axios.get("http://localhost:8080/restaurants")
           .then(response => {
             setRestaurants(response.data.filter(rest => rest.managerUsername == signedIn));
-            // setRestaurants(response.data)
         })
           .catch(error => {
             console.error("Error fetching restaurants:", error);
@@ -42,15 +40,13 @@ export default function Manager() {
 
     // console.log(users)
     // console.log(manager)
-    // console.log(restaurants)
+    //console.log(restaurants)
 
     return (
         <>
             <div >
                 <ManagerNav />
-                {manager && (
-                <Email email={manager.email}/>
-                )}
+                <Email email={manager && manager.email}/>
                 <ManagerRestaurants restaurants={restaurants}/>
                 <Footer />
             </div>

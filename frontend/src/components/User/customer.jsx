@@ -4,17 +4,17 @@ import "./customer.css"
 export default function Customer({user}) {
     return(
         <>
-            <section class="container main">
-                <div class="inline-cell notif">
-                    <div class="content">
-                        <div className="left">
-                            <p class="text">Your reservations are also emailed to </p>
+            <section className="container main">
+                <div className="inline-cell notif">
+                    <div className="content">
+                        <div classNameName="left">
+                            <p className="text">Your reservations are also emailed to </p>
                             &nbsp;
-                            <a class="red" href={"mailto:"+user.email}> {user.email} </a>
+                            <a className="red" href={"mailto:"+user.email}> {user.email} </a>
                         </div>
                         
-                        <div className="right">
-                            <p class="address">
+                        <div classNameName="right">
+                            <p className="address">
                             Address: {user.address.city},&nbsp;{user.address.country}
                             </p>
                             <button>Logout</button>
@@ -22,56 +22,56 @@ export default function Customer({user}) {
                     </div>
                 </div>
 
-                <div class="reservations">
-                    <table class="table center">
+                <div className="reservations">
+                    <table className="table center">
                         <thead>
-                            <tr class="header">
+                            <tr className="header">
                             <th colspan="5">My Reservations</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                            <td class="green">2024-06-22 16:00</td>
+                            <td className="green">2024-06-22 16:00</td>
                             <td>
-                                <a class="red" href="./../Restaurant/rest.html">Ali Daei Dizy</a>
+                                <a className="red" href="./../Restaurant/rest.html">Ali Daei Dizy</a>
                             </td>
-                            <td class="green">Table-12</td>
-                            <td class="green">4 Seats</td>
+                            <td className="green">Table-12</td>
+                            <td className="green">4 Seats</td>
                             <td>
-                                <a class="red" href="customerSecondPage.html">Cancel</a>
+                                <a className="red" href="customerSecondPage.html">Cancel</a>
                             </td>
                             </tr>
                             <tr>
-                                <td class="gray">2024-02-22 16:00</td>
+                                <td className="gray">2024-02-22 16:00</td>
                                 <td>
-                                    <a class="red" href="./../Restaurant/rest.html">Ali Daei Dizy</a>
+                                    <a className="red" href="./../Restaurant/rest.html">Ali Daei Dizy</a>
                                 </td>
-                                <td class="gray">Table-12</td>
-                                <td class="gray">4 Seats</td>
+                                <td className="gray">Table-12</td>
+                                <td className="gray">4 Seats</td>
                                 <td>
-                                    <a class="red" href="customerSecondPage.html">Add Comment</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="gray">2024-02-22 16:00</td>
-                                <td>
-                                    <a class="red" href="./../Restaurant/rest.html">Ali Daei Dizy</a>
-                                </td>
-                                <td class="gray">Table-12</td>
-                                <td class="gray">4 Seats</td>
-                                <td>
-                                    <a class="red" href="customerSecondPage.html">Add Comment</a>
+                                    <a className="red" href="customerSecondPage.html">Add Comment</a>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="gray">2024-02-22 16:00</td>
+                                <td className="gray">2024-02-22 16:00</td>
                                 <td>
-                                    <a class="red" href="./../Restaurant/rest.html">Ali Daei Dizy</a>
+                                    <a className="red" href="./../Restaurant/rest.html">Ali Daei Dizy</a>
                                 </td>
-                                <td class="gray">Table-12</td>
-                                <td class="gray">4 Seats</td>
+                                <td className="gray">Table-12</td>
+                                <td className="gray">4 Seats</td>
                                 <td>
-                                    <a class="red" href="customerSecondPage.html">Add Comment</a>
+                                    <a className="red" href="customerSecondPage.html">Add Comment</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className="gray">2024-02-22 16:00</td>
+                                <td>
+                                    <a className="red" href="./../Restaurant/rest.html">Ali Daei Dizy</a>
+                                </td>
+                                <td className="gray">Table-12</td>
+                                <td className="gray">4 Seats</td>
+                                <td>
+                                    <a className="red" href="customerSecondPage.html">Add Comment</a>
                                 </td>
                             </tr>
 

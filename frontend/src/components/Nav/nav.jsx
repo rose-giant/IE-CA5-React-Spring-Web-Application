@@ -7,23 +7,23 @@ export default function Nav() {
     const [signedIn, setSignedIn] = useContext(Context)
 
     return (
-        <nav class="navbar px-5 py-2">
-            <div class="nav-left">
-                <a class="navbar-brand" href="/">
-                    <img class="logo" src="./logo/logo.png" alt="" />
+        <nav className="navbar px-5 py-2">
+            <div className="nav-left">
+                <a className="navbar-brand" href="/">
+                    <img className="logo" src="./logo/logo.png" alt="" />
 
-                    <p class="nav-title">
+                    <p className="nav-title">
                         Reserve Table From Anywhere!
                     </p>
                 </a>
             </div>
 
-            <div class="nav-right">
+            <div className="nav-right">
             {
                 signedIn === "" ? "" :
                 <p>Hello {signedIn}!</p> 
             }
-            <button class="btn nav-btn">Reserve Now!</button>
+            <button className="btn nav-btn">Reserve Now!</button>
             </div>
         </nav>
     )

@@ -10,7 +10,7 @@ import HomePage from './pages/Home'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 import Search from './components/Search/search'
 import Manager from './components/Manager/manager'
-// import Manager from './components/Manager/manage'
+import ManageReastaurant from './components/Manager/ManageRestaurant'
 
 export const Context = React.createContext()
 
@@ -23,8 +23,8 @@ const App = () => {
       
           <Routes>
             <Route path="/restaurant/:name" element={<RestaurantDetail />} />
+            <Route path="/manage/:name" element={<ManageReastaurant />} />
             <Route path="/manager/" element={<Manager />} />
-            {/* <Route path="/manage/" element={<Manage />} /> */}
             <Route path="/search/" element={<Search />} />
             <Route path='/' element={<HomePage />} />
             <Route path="/init" element={<InitUser />}/>

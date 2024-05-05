@@ -7,14 +7,14 @@ export default function Email({email}) {
     const [signedIn, setSignedIn] = useContext(Context)
 
     return (
-        <div class="inline-cell notif">
-            <div class="content">
-                <p class="text">Your reservations are also emailed to   </p>
-                <a class="red" href="mailto:Tom_holland@ut.ac.ir"> {email} </a>
+        <div className="inline-cell notif">
+            <div className="content">
+                <p className="text">Your reservations are also emailed to   </p>
+                <a className="red" href="mailto:Tom_holland@ut.ac.ir"> {email} </a>
             </div>
             &nbsp;
             <div>
-                <a class="red-btn btn" href="">Logout</a>
+                <a className="red-btn btn" href="">Logout</a>
             </div>
         </div>
     )
