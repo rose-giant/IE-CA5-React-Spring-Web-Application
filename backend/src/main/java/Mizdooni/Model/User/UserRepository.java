@@ -31,4 +31,13 @@ public class UserRepository {
         }
         return null;
     }
+
+    public User findByUsernameAndPassword(String username, String password) {
+        for(User user: users) {
+            if(Objects.equals(user.username, username) && Objects.equals(user.password, password)) {
+                return user;
+            }
+        }
+        return null;
+    }
 }
