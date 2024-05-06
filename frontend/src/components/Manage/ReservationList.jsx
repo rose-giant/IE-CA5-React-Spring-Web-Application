@@ -1,54 +1,81 @@
 import React, { useContext, useState, useEffect } from "react"
-import { Context } from "../../App"
+import { GlobalTable } from "./ManageRestaurant"
 import { useNavigate } from "react-router-dom"
 import axios from "axios"
 import "./manage.css"
 
-export default function ReservationList({tableNumber}) {
+export default function ReservationList({ restName }) {
 
-    const [restaurants, setRestaurants] = useState([])
+    const [reservations, setReservations] = useState([])
+    const [restReservations, setRestReservations] = useState([])
+    const [table, setTable] = useContext(GlobalTable)
 
     useEffect(() => {
-        axios.get("http://localhost:8080/restaurants")
+        axios.get("http://localhost:8080/reservations")
             .then(response => {
-                setRestaurants(response.data.filter(rest => rest.managerUsername == managerName));
+                setRestReservations(response.data.filter(resrv => resrv.restaurantName == restName));
+                setReservations(restReservations.filter(resrv => resrv.tableNumber == table.tableNumber))
             })
             .catch(error => {
-                console.error("Error fetching restaurants:", error);
+                console.error("Error fetching reservations:", error);
             });
-    }, restaurants)
+    }, [restReservations, table])
 
-    // console.log(managerName);
-    // console.log(restaurants)
+    // table && setReservations(restReservations.filter(resrv => resrv.tableNumber == table.tableNumber))
+    // console.log(table.tableNumber);
+    console.log(reservations)
+    console.log(table)
 
-    const navigate = useNavigate()
+
 
     return (
-        <div className="restaurants">
-            <div className="table center second-table">
-                <ul>
-                    <li>
-                        <div className="inline-cell">
-                            <p className="bold">My Restaurants </p>
-                            <a className="red-btn btn" href="ManagerSecondPage.html">Add</a>
-                        </div>
-                    </li>
-                </ul>
-                <ul>
-                    {restaurants && restaurants.map((restaurant, index) => (
-                        <li key={index}>
-                            <div className="inline-cell">
-                                <p className="bold">{restaurant.name} </p>
-                                <p className="bold">{restaurant.address.city}, {restaurant.address.country} </p>
-                                <button className="red-btn btn" onClick={()=>navigate(`/manage/${restaurant.name}`)}>Manage</button>
-                            </div>
-                        </li>
-                    ))}
-                </ul>
 
-            </div>
+        <div className="grid-item">
+            <section className="reservations">
+
+                {reservations && (
+                    <div className="wide">
+                        <p className="bold">Reservation List</p>
+                        {
+                            table == null ? <p className="blur">Select a table to see its reservations</p> :
+                                reservations.length == 0 ? <p className="red-blur">No Reservations.</p> :
+                                    <p className="red-blur">Reservations for Table-{table && table.tableNumber}</p>
+                        }
+                    </div>
+                    )
+                }
+                <div className="reservations">
+                    <table className="table center">
+                        <tbody className="left-align">
+                            {
+                                table == null ?
+                                    <div >
+                                        {restReservations && restReservations.map((reservation, index) => (
+                                            <tr className="reserve-row inline-cell" key={index}>
+                                                <td className="ruler">{reservation.datetime}</td>
+                                                <td>By {reservation.username}</td>
+                                                <td>Table-{reservation.tableNumber}</td>
+                                            </tr>
+                                        ))}
+                                    </div>
+                                    :
+                                    <div>
+                                        {
+                                            reservations && reservations.map((reservation, index) => (
+                                                <tr className="reserve-row inline-cell" key={index}>
+                                                    <td className="ruler">{reservation.datetime}</td>
+                                                    <td>By {reservation.username}</td>
+                                                    <td>Table-{reservation.tableNumber}</td>
+                                                </tr>
+                                            ))}
+                                    </div>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
         </div>
-
 
     )
 }

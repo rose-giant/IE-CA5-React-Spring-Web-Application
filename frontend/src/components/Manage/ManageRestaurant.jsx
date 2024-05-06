@@ -41,7 +41,7 @@ export default function ManageRestaurant() {
             <p className="normal-font">Address: {restaurant.address.street}, {restaurant.address.city}, {restaurant.address.country}</p>
           </div>
           <div className="grid-container">
-            <ReservationList/>
+            <ReservationList restName={restaurant.name}/>
             <TableList restName={restaurant.name} />
             
           </div>
