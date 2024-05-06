@@ -46,6 +46,10 @@ body {
     padding-top: 12px;
 }
 
+.center{
+    align-items: center;
+}
+
 .blur{
     font-size: 10px;
     font-weight: 300;

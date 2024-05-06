@@ -11,9 +11,6 @@ import ManagerRestaurants from "./managerRestaurants"
 export default function Manager() {
     const [signedIn, setSignedIn, role, setRole] = useContext(Context)
 
-    setSignedIn("amin")
-    setRole("manager")
-
     const [manager, setManager] = useState(null)
 
     useEffect(() => {

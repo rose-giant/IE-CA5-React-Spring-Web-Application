@@ -27,29 +27,33 @@ export default function TableList({ restName }) {
         <div>
             <div class="grid-item pink-back">
                 <a className="red inline-cell">+ Add Table</a>
-
-                <ul className="tables-list">
-                    {tables && tables.map((table, index) => (
-                        <li key={index}>
-                            <button className="table-card" onClick={() => setTable(table)}>
-                                <div className="card-part">
-                                    <img className="seat" src="/table_cards/hashtag.svg" alt="" />
-                                </div>
-                                <div className="card-part">{table.tableNumber}</div>
-                                <div className="card-part">
-                                    <img className="seat" src="/table_cards/seat.svg" alt="" />
-                                </div>
-                                <div className="card-part">{table.seatsNumber}</div>
-                            </button>
-                        </li>
-                    ))}
-                </ul>
-                
+                {
+                    tables.length == 0
+                    ?
+                    <div>
+                        <p className="bold center">No Tables have been added.</p>
+                    </div>
+                    :
+                    <div>
+                        <ul className="tables-list">
+                            {tables && tables.map((table, index) => (
+                                <li key={index}>
+                                    <button className="table-card" onClick={() => setTable(table)}>
+                                        <div className="card-part">
+                                            <img className="seat" src="/table_cards/hashtag.svg" alt="" />
+                                        </div>
+                                        <div className="card-part">{table.tableNumber}</div>
+                                        <div className="card-part">
+                                            <img className="seat" src="/table_cards/seat.svg" alt="" />
+                                        </div>
+                                        <div className="card-part">{table.seatsNumber}</div>
+                                    </button>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                }
             </div>
-
-
         </div>
-
-
     )
 }

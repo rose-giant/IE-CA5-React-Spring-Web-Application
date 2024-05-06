@@ -45,8 +45,7 @@ export default function Search() {
     return(
         
         <>
-        <div className="homepage">
-            <Nav /> 
+        <div className="homepage"> 
         </div>
         <div className="search-container">
           <ul>

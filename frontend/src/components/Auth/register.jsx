@@ -4,7 +4,7 @@ import { Context } from "../../App"
 import { useNavigate } from "react-router-dom"
 
 export default function Register() {
-    const [signedIn, setSignedIn] = useContext(Context)
+    const [signedIn, setSignedIn, role, setRole] = useContext(Context)
     const [name, setName] = useState("")
     const navigate = useNavigate()
 
@@ -36,10 +36,12 @@ export default function Register() {
 
                 <div className="radios">
                         <label htmlFor="I'm a new Customer">Customer</label>
-                        <input className="input-group" type="radio" id="c"/>
+                        <input className="input-group" type="radio" id="c"
+                        onChange={(e) => setRole("customer")}/>
 
                         <label htmlFor="Manager">Manager</label>
-                        <input className="input-group" type="radio" id="m"/>
+                        <input className="input-group" type="radio" id="m"
+                        onChange={(e) => setRole("manager")}/>
                 </div>
                 <button type="submit">Register</button>
             </form>

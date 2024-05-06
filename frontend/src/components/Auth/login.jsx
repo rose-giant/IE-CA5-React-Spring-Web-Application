@@ -10,6 +10,7 @@ export default function Login() {
     const [password, setPassword] = useState("")
     const [signedIn, setSignedIn] = useContext(Context)
     const navigate = useNavigate()
+  
 
     const findTargetUser = (lsit) => {
         lsit.forEach(item => {
@@ -17,6 +18,10 @@ export default function Login() {
                 String(item.password).valueOf() == String(password).valueOf()) {
                 setUser(item)
                 setSignedIn(username)
+                navigate("/")
+            }
+            else{
+                
             }
         })``
     }
