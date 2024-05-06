@@ -21,16 +21,6 @@ export default function InitUser() {
         setActiveButton("register")
     }
 
-    const user = {
-        username: "razi",
-        password: "bazi",
-        email:"razibazi@sazi",
-        address: {
-            city: "save",
-            country: "neverland"
-        }
-    }
-
     useEffect(() => {
         axios.get("http://localhost:8080/users")
           .then(response => {
@@ -39,9 +29,6 @@ export default function InitUser() {
           .catch(error => {
             console.error("Error fetching restaurants:", error);
           });
-          
-          setUsers([user])
-          setSignedIn("razi")
       }, [])
 
     return(

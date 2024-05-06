@@ -43,7 +43,6 @@ export default function ManageRestaurant() {
           <div className="grid-container">
             <ReservationList restName={restaurant.name}/>
             <TableList restName={restaurant.name} />
-            
           </div>
         </div>
       )}

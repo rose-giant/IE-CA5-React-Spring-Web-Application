@@ -9,7 +9,7 @@ export default function Nav() {
     
     const navigate = useNavigate()
     const handleNavigation = () => {
-        navigate("/")
+        navigate("/home")
     }
 
     return (
@@ -31,8 +31,8 @@ export default function Nav() {
             }
             {
                 signedIn === "" ? <button className="btn nav-btn">Reserve Now!</button> :
-                role === "manager"? <button className="btn nav-btn">My Restaurants</button>
-                :<button className="btn nav-btn">My Reservations</button>
+                role === "manager"? <button className="btn nav-btn"onClick={()=>navigate("/manager")}>My Restaurants</button>
+                :<button className="btn nav-btn"onClick={()=>navigate("/customer")}>My Reservations</button>
             }
             </div>
         </nav>

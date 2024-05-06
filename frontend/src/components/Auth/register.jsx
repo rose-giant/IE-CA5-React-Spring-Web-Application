@@ -12,7 +12,7 @@ export default function Register() {
         e.preventDefault()
         console.log(name)
         setSignedIn(name)
-        navigate("/")
+        navigate("/home")
     }
 
     return(

@@ -1,6 +1,5 @@
 import React, { useContext, useState, useEffect } from "react"
 import { GlobalTable } from "./ManageRestaurant"
-import { useNavigate } from "react-router-dom"
 import axios from "axios"
 import "./manage.css"
 
