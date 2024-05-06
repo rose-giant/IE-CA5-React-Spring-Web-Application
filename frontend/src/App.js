@@ -10,7 +10,7 @@ import HomePage from './pages/Home'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 import Search from './components/Search/search'
 import Manager from './components/Manager/manager'
-import ManageReastaurant from './components/Manager/ManageRestaurant'
+import ManageReastaurant from './components/Manage/ManageRestaurant'
 
 export const Context = React.createContext()
 

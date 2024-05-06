@@ -32,7 +32,10 @@ export default function ManageRestaurant({route}) {
     return (
         <>
             <div >
-                hi
+              <div class="sub-nav">
+                  <p class="normal-font">{restaurant.name}</p>
+                  <p class="normal-font">{restaurant.address}</p>
+              </div>
                 {/* 
                 {manager && (
                 <Email email={manager.email}/>
