@@ -1,7 +1,8 @@
 package Mizdooni.Model.User;
 
 import Mizdooni.Model.Address;
-import Mizdooni.Model.Reservation;
+
+import Mizdooni.Model.Reservation.Reservation;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
