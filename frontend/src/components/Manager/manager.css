@@ -39,6 +39,7 @@ body {
 }
 
 .container {
+    padding-top: 1%;
     height: 100vh;
 }
 
@@ -94,6 +95,7 @@ body {
 .inline-cell{
     display: flex;
     padding-inline: 30px;
+    /* width: 2px; */
     padding-top: 1%;
     margin: auto;
     align-items: center;

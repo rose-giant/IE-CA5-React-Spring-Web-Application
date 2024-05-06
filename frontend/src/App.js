@@ -12,6 +12,8 @@ import Search from './components/Search/search'
 import Manager from './components/Manager/manager'
 import ManageReastaurant from './components/Manage/ManageRestaurant'
 import AccessDeniedPage from './pages/AccessDenied'
+import Customer from './components/Customer/Customer'
+
 
 export const Context = React.createContext()
 
@@ -27,7 +29,7 @@ const App = () => {
             <Route path="/restaurant/:name" element={<RestaurantDetail />} />
             <Route path="/manage/:restaurantName" element={<ManageReastaurant />} />
             <Route path="/manager/" element={<Manager />} />
-            <Route path="/customer/" element={<Customer />} />
+            <Route path="/customer/" element={<Customer/>} />
             <Route path="/search/" element={<Search />} />
             <Route path='/' element={<InitUser />} />
             <Route path="/home" element={<HomePage/>}/>

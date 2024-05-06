@@ -2,6 +2,7 @@ package Mizdooni.Controller;
 
 import Mizdooni.Model.User.User;
 import Mizdooni.Model.User.UserRepository;
+import Mizdooni.Model.User.userView;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,6 +25,15 @@ public class AuthController {
             throw new Exception("Invalid username or password!");
         }
         return user;
+    }
+    @PostMapping("signup")
+    public User signup(HttpServletResponse response,
+                       @RequestBody userView userView) throws Exception {
+        UserRepository userRepository = UserRepository.getInstance();
+        User newUser = userView.viewToUser();
+        userRepository.addUser(newUser);
+        response.setStatus(HttpServletResponse.SC_CREATED);
+        return newUser;
     }
 
 }

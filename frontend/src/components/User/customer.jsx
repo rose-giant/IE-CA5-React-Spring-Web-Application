@@ -4,7 +4,7 @@ import "./customer.css"
 export default function Customer({user}) {
     return(
         <>
-            <section className="container main">
+            <section className="container">
                 <div className="inline-cell notif">
                     <div className="content">
                         <div className="left">

@@ -12,35 +12,6 @@ export default function Login() {
     const [signedIn, setSignedIn, role, setRole] = useContext(Context)
     const navigate = useNavigate()
 
-    // useEffect(() => {
-        // setUser(response.data.filter(usr => usr.username == username && usr.password == password));
-        //         console.log(user)
-        //         if(user[0]){
-    // }, user)
-  
-
-    const findTargetUser = (lsit) => {
-        lsit.forEach(item => {
-            
-            if(String(item.username).valueOf() == String(username).valueOf() && 
-                String(item.password).valueOf() == String(password).valueOf()) {
-                console.log(username)
-                console.log(password)
-                setUser(item)
-                setSignedIn(username)
-                setRole(item.role)
-                console.log(role)
-                navigate("/home")
-            }
-            else{
-                navigate("/403")
-            }
-        })``
-    }
-
-    // "password": "Razieh_DorehGard_1234",
-    // "username": "Razieh_DorehGard"
-
     const handleLogin = (e) => {
         e.preventDefault();
         const params = { username: username, password: password };

@@ -1,38 +1,37 @@
+import Email from "../Helpers/Email"
 import React, { useContext, useState, useEffect } from "react"
-import "./manager.css"
+import "./customer.css"
 import { Context } from "../../App"
 import Footer from "../Footer/footer"
 import axios from "axios"
-import Email from "../Helpers/Email"
-import ManagerRestaurants from "./managerRestaurants"
+import CustomerReservations from "./CustomerReservations"
 
 
+export default function Customer() {
+    const [signedIn, setSignedIn] = useContext(Context)
 
-export default function Manager() {
-    const [signedIn, setSignedIn, role, setRole] = useContext(Context)
-
-    const [manager, setManager] = useState(null)
+    const [customer, setcustomer] = useState(null)
 
     useEffect(() => {
         axios.get("http://localhost:8080/users")
             .then(response => {
-                setManager(response.data.filter(user => user.username == signedIn)[0]);
+                setcustomer(response.data.filter(user => user.username == signedIn)[0]);
             })
             .catch(error => {
                 console.error("Error fetching users:", error);
             });
-    }, [manager])
+    }, [customer])
 
-    console.log(manager)
-    // console.log(manager.username )
+    // console.log(customer)
+    // console.log(customer.username )
 
     return (
         <>
-        {manager && (
+        {customer && (
             <div >
                 <section className="container">
-                    <Email email={manager.email}/>
-                    <ManagerRestaurants managerName = {manager.username}/>
+                    <Email email={customer.email}/>
+                    <CustomerReservations customerName = {customer.username}/>
                 </section>
                 <Footer />
             </div>
@@ -40,3 +39,4 @@ export default function Manager() {
         </>
     )
 }
+

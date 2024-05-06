@@ -1,5 +1,7 @@
 package Mizdooni.Model.User;
 
+import Mizdooni.Model.Address;
+
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -39,5 +41,9 @@ public class UserRepository {
             }
         }
         return null;
+    }
+
+    public void addUser(User newUser) {
+        users.add(newUser);
     }
 }
