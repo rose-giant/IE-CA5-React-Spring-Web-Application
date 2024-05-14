@@ -32,18 +32,11 @@ export default function Register() {
                     console.log(role)
                     navigate("/home")
                 }                   
-                else if(response.status === 400){
-                    navigate("/400")
-                }
             })
             .catch(error => {
-                
-                console.error("Error fetching users:", error);
+                console.log(error.Context)
+                navigate("/400")
             });
-        e.preventDefault()
-        console.log(name)
-        setSignedIn(name)
-        navigate("/home")
     }
 
     return(

@@ -5,8 +5,6 @@ import { useNavigate } from "react-router-dom"
 import axios from "axios"
 
 export default function Login() {
-    const [user, setUser] = useState()
-    const [users, setUsers] = useState()
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
     const [signedIn, setSignedIn, role, setRole] = useContext(Context)
@@ -24,24 +22,11 @@ export default function Login() {
                     console.log(role)
                     navigate("/home")
                 }                   
-                else{
-                    navigate("/403")
-                }
             })
             .catch(error => {
-                
-                console.error("Error fetching users:", error);
+                console.log(error.Context)
+                navigate("/403")
             });
-        
-
-        // e.preventDefault()
-        // axios.get("http://localhost:8080/users")
-        // .then(response => {
-        //   findTargetUser(response.data)
-        // })
-        // .catch(error => {
-        //   console.error("Error fetching reviews:", error)
-        // })
     }
 
     return(

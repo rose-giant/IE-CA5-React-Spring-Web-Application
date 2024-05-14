@@ -13,6 +13,7 @@ import Manager from './components/Manager/manager'
 import ManageReastaurant from './components/Manage/ManageRestaurant'
 import AccessDeniedPage from './pages/AccessDenied'
 import Customer from './components/Customer/Customer'
+import BadRequestPage from './pages/BadRequest'
 
 
 export const Context = React.createContext()
@@ -34,6 +35,7 @@ const App = () => {
             <Route path='/' element={<InitUser />} />
             <Route path="/home" element={<HomePage/>}/>
             <Route path="/403" element={<AccessDeniedPage/>}/>
+            <Route path="/400" element={<BadRequestPage/>}/>
           </Routes>
 
       </Context.Provider>

@@ -31,8 +31,12 @@ public class AuthController {
                        @RequestBody userView userView) throws Exception {
         UserRepository userRepository = UserRepository.getInstance();
         User newUser = userView.viewToUser();
-        userRepository.addUser(newUser);
-        response.setStatus(HttpServletResponse.SC_CREATED);
+        if(userRepository.findUserByUserName(newUser.username) != null){
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+        }else {
+            userRepository.addUser(newUser);
+            response.setStatus(HttpServletResponse.SC_CREATED);
+        }
         return newUser;
     }
 

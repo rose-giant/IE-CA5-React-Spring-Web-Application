@@ -45,10 +45,7 @@ public class UserRepository {
         return null;
     }
 
-    public void addUser(User newUser) {
-        System.out.println(users.size());
+    public void addUser(User newUser) throws Exception {
         users.add(newUser);
-        System.out.println(users.size());
-
     }
 }
