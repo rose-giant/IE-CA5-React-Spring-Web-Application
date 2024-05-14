@@ -13,8 +13,8 @@ public class ReviewRepository {
 
     public static ReviewRepository getInstance() throws Exception {
         if(instance == null)
-            return new ReviewRepository();
-        else return instance;
+            instance = new ReviewRepository();
+        return instance;
     }
 
     public ArrayList<Review> getAll() {

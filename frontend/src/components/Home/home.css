@@ -161,7 +161,7 @@ nav {
     justify-content: space-evenly;
     position: relative;
     right: 4%;
-    top: 100px;
+    top: 800px;
    
     img {
         width: 474px;
@@ -237,5 +237,5 @@ ul {
 
 Footer {
     position: relative;
-    top: 280px;
+    top: 1080px;
 }

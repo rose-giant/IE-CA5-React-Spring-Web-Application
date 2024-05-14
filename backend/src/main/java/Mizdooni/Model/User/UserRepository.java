@@ -13,12 +13,14 @@ public class UserRepository {
     public UserRepository() throws Exception {
         UserDAO dao = new UserDAO();
         users = dao.getFromAPI();
+        System.out.println("users fetch from API");
+
     }
 
     public static UserRepository getInstance() throws Exception {
         if(instance == null)
-            return new UserRepository();
-        else return instance;
+            instance = new UserRepository();
+        return instance;
     }
 
     public ArrayList<User> getAll() {
@@ -44,6 +46,9 @@ public class UserRepository {
     }
 
     public void addUser(User newUser) {
+        System.out.println(users.size());
         users.add(newUser);
+        System.out.println(users.size());
+
     }
 }

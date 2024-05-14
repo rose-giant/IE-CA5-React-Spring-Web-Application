@@ -11,7 +11,7 @@ export const GlobalTable = React.createContext()
 
 
 export default function ManageRestaurant() {
-
+  const [isModalOpen, setIsModalOpen] = useState(false)
   const { restaurantName } = useParams();
   const [restaurant, setRestaurant] = useState(null)
   const [table, setTable] = useState(null)

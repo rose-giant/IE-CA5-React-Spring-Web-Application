@@ -28,19 +28,19 @@ export default function ManagerRestaurants({managerName}) {
             <div className="table center second-table">
                 <ul>
                     <li>
-                        <div className="inline-cell">
-                            <p className="bold">My Restaurants </p>
-                            <a className="red-btn btn" href="ManagerSecondPage.html">Add</a>
+                        <div className="inline-cell items">
+                            <p className="bold item">My Restaurants </p>
+                            <a className="red-btn btn item" href="ManagerSecondPage.html">Add</a>
                         </div>
                     </li>
                 </ul>
                 <ul>
                     {restaurants && restaurants.map((restaurant, index) => (
                         <li key={index}>
-                            <div className="inline-cell">
-                                <p className="bold">{restaurant.name} </p>
-                                <p className="bold">{restaurant.address.city}, {restaurant.address.country} </p>
-                                <button className="red-btn btn" onClick={()=>navigate(`/manage/${restaurant.name}`)}>Manage</button>
+                            <div className="inline-cell items">
+                                <p className="bold item">{restaurant.name} </p>
+                                <p className="bold item">{restaurant.address.city}, {restaurant.address.country} </p>
+                                <button className="red-btn btn item" onClick={()=>navigate(`/manage/${restaurant.name}`)}>Manage</button>
                             </div>
                         </li>
                     ))}

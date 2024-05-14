@@ -2,10 +2,10 @@ import React, { useContext, useState, useEffect } from "react"
 import { GlobalTable } from "./ManageRestaurant"
 import axios from "axios"
 import "./manage.css"
-
+import TableModal from "./../Helpers/tableModal"
 
 export default function TableList({ restName }) {
-
+    const [isModalOpen, setIsModalOpen] = useState(false)
     const [tables, setTables] = useState([])
     const [table, setTable] = useContext(GlobalTable)
 
@@ -26,7 +26,8 @@ export default function TableList({ restName }) {
     return (
         <div>
             <div class="grid-item pink-back">
-                <a className="red inline-cell">+ Add Table</a>
+                <a onClick={() => setIsModalOpen(true)} className="red inline-cell">+ Add Table</a>
+                <TableModal  isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
                 {
                     tables.length == 0
                     ?

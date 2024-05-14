@@ -13,8 +13,8 @@ public class ReservationRepository {
 
     public static ReservationRepository getInstance() throws Exception {
         if(instance == null)
-            return new ReservationRepository();
-        else return instance;
+            instance = new ReservationRepository();
+        return instance;
     }
 
     public ArrayList<Reservation> getAll() {

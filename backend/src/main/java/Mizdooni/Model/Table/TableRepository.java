@@ -13,8 +13,8 @@ public class TableRepository {
 
     public static TableRepository getInstance() throws Exception {
         if(instance == null)
-            return new TableRepository();
-        else return instance;
+            instance =  new TableRepository();
+        return instance;
     }
 
     public ArrayList<Table> getAll() {

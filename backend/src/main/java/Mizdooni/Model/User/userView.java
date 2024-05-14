@@ -28,5 +28,6 @@ public class userView {
     public User viewToUser() throws Exception {
         return new User(new Address(city, country),email, password, role, username );
     }
+
 }
 

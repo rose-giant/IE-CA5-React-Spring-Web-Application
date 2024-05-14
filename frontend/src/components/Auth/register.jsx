@@ -32,12 +32,12 @@ export default function Register() {
                     console.log(role)
                     navigate("/home")
                 }                   
-                else{
-                    navigate("/403")
+                else if(response.status === 400){
+                    navigate("/400")
                 }
             })
             .catch(error => {
-                navigate("/403")
+                
                 console.error("Error fetching users:", error);
             });
         e.preventDefault()

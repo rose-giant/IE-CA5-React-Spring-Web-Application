@@ -29,7 +29,7 @@ export default function Login() {
                 }
             })
             .catch(error => {
-                navigate("/403")
+                
                 console.error("Error fetching users:", error);
             });
         

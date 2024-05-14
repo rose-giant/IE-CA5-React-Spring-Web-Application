@@ -2,6 +2,7 @@ package Mizdooni.Controller;
 
 import Mizdooni.Model.User.User;
 import Mizdooni.Model.User.UserRepository;
+import Mizdooni.Model.User.UserViewLogin;
 import Mizdooni.Model.User.userView;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.http.MediaType;
@@ -17,12 +18,11 @@ import java.util.Map;
 public class AuthController {
     @PostMapping("login")
     public User login(HttpServletResponse response,
-                      @RequestBody Map<String, String> body) throws Exception {
+                      @RequestBody UserViewLogin body) throws Exception {
         UserRepository userRepo = UserRepository.getInstance();
-        User user = userRepo.findByUsernameAndPassword(body.get("username"), body.get("password"));
+        User user = userRepo.findByUsernameAndPassword(body.getUsername(), body.getPassword());
         if(user == null) {
             response.setStatus(HttpServletResponse.SC_NOT_FOUND);
-            throw new Exception("Invalid username or password!");
         }
         return user;
     }

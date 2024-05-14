@@ -46,6 +46,11 @@ body {
 .restaurants{
     margin-top: 4%;
     height: 80vh;
+    width:80%;
+    display: block;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
 
     .table{
         width: 40%;
@@ -100,6 +105,7 @@ body {
     margin: auto;
     align-items: center;
     justify-content: space-between;
+    
   }
 
 .grid-container {
@@ -118,6 +124,7 @@ body {
     text-align: center;
 
     .inline-cell{
+
         font-size: 13px;
         padding: 0;
         margin: 0;
@@ -237,4 +244,17 @@ td {
         display: block;
         
     }
+}
+
+.items{
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    right: 150px;
+}
+
+.item {
+    width: 200px;
+
 }

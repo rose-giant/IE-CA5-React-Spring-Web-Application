@@ -1,8 +1,10 @@
 .card {
     position: relative;
     width: 200px;
+    top: 500px;
     background-color: white;
     border: none;
+    margin-inline : 16px;
 
     * {
         text-align: start;

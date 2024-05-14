@@ -18,8 +18,8 @@ public class RestaurantRepository {
 
     public static RestaurantRepository getInstance() throws Exception {
         if(instance == null)
-            return new RestaurantRepository();
-        else return instance;
+            instance = new RestaurantRepository();
+        return instance;
     }
 
     public ArrayList<Restaurant> getAll() {
