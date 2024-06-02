@@ -2004,3 +2004,13 @@ Unconditional classes:
 2024-06-02 14:45:31.216 [http-nio-8080-exec-1] INFO  Mizdooni.Controller.AuthController - get all restaurants API requested
 2024-06-02 14:45:33.031 [http-nio-8080-exec-3] INFO  Mizdooni.Controller.AuthController - get all restaurants API requested
 2024-06-02 14:45:34.031 [http-nio-8080-exec-4] INFO  Mizdooni.Controller.AuthController - get all restaurants API requested
+2024-06-02 15:02:23.443 [main] INFO  Mizdooni.MizdooniApplication - Starting MizdooniApplication using Java 19.0.2 with PID 26230 (/home/razie/Desktop/React-Web-Application-Back-end-API/target/classes started by razie in /home/razie/Desktop/React-Web-Application-Back-end-API)
+2024-06-02 15:02:23.445 [main] INFO  Mizdooni.MizdooniApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-02 15:02:24.488 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-02 15:02:24.498 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-02 15:02:24.501 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-02 15:02:24.501 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-02 15:02:24.543 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-02 15:02:24.545 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1032 ms
+2024-06-02 15:02:28.141 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-06-02 15:02:28.149 [main] INFO  Mizdooni.MizdooniApplication - Started MizdooniApplication in 5.159 seconds (process running for 5.771)
