@@ -1,30 +1,30 @@
-2024-06-02 13:42:02.321 [main] INFO  Mizdooni.MizdooniApplication - Starting MizdooniApplication using Java 19.0.2 with PID 21674 (/home/razie/Desktop/React-Web-Application-Back-end-API/target/classes started by razie in /home/razie/Desktop/React-Web-Application-Back-end-API)
-2024-06-02 13:42:02.324 [main] INFO  Mizdooni.MizdooniApplication - No active profile set, falling back to 1 default profile: "default"
-2024-06-02 13:42:02.324 [main] DEBUG o.s.boot.SpringApplication - Loading source class Mizdooni.MizdooniApplication
-2024-06-02 13:42:02.384 [main] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3370f42
-2024-06-02 13:42:03.376 [main] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory - Code archive: /home/razie/.m2/repository/org/springframework/boot/spring-boot/3.2.5/spring-boot-3.2.5.jar
-2024-06-02 13:42:03.377 [main] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory - Code archive: /home/razie/.m2/repository/org/springframework/boot/spring-boot/3.2.5/spring-boot-3.2.5.jar
-2024-06-02 13:42:03.377 [main] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory - None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
-2024-06-02 13:42:03.397 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-06-02 13:42:03.408 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2024-06-02 13:42:03.411 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-06-02 13:42:03.411 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-06-02 13:42:03.458 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-06-02 13:42:03.458 [main] DEBUG o.s.b.w.s.c.ServletWebServerApplicationContext - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2024-06-02 13:42:03.460 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1074 ms
-2024-06-02 13:42:03.477 [main] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, corsFilter urls=[/*] order=2147483647
-2024-06-02 13:42:03.477 [main] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
-2024-06-02 13:42:03.501 [main] DEBUG o.s.b.w.s.f.OrderedRequestContextFilter - Filter 'requestContextFilter' configured for use
-2024-06-02 13:42:03.504 [main] DEBUG o.s.b.w.s.f.OrderedCharacterEncodingFilter - Filter 'characterEncodingFilter' configured for use
-2024-06-02 13:42:03.504 [main] DEBUG o.s.b.w.s.f.OrderedFormContentFilter - Filter 'formContentFilter' configured for use
-2024-06-02 13:42:12.114 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
-2024-06-02 13:42:12.138 [main] DEBUG o.s.b.a.AutoConfigurationPackages - @EnableAutoConfiguration was declared on a class in the package 'Mizdooni'. Automatic @Repository and @Entity scanning is enabled.
-2024-06-02 13:42:12.184 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2024-06-02 13:42:12.211 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2024-06-02 13:42:12.239 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2024-06-02 13:42:12.313 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2024-06-02 13:42:12.325 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
-2024-06-02 13:42:12.342 [main] DEBUG o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-06-02 14:29:31.486 [main] INFO  Mizdooni.MizdooniApplication - Starting MizdooniApplication using Java 19.0.2 with PID 24104 (/home/razie/Desktop/React-Web-Application-Back-end-API/target/classes started by razie in /home/razie/Desktop/React-Web-Application-Back-end-API)
+2024-06-02 14:29:31.487 [main] INFO  Mizdooni.MizdooniApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-02 14:29:31.488 [main] DEBUG o.s.boot.SpringApplication - Loading source class Mizdooni.MizdooniApplication
+2024-06-02 14:29:31.540 [main] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3370f42
+2024-06-02 14:29:32.438 [main] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory - Code archive: /home/razie/.m2/repository/org/springframework/boot/spring-boot/3.2.5/spring-boot-3.2.5.jar
+2024-06-02 14:29:32.438 [main] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory - Code archive: /home/razie/.m2/repository/org/springframework/boot/spring-boot/3.2.5/spring-boot-3.2.5.jar
+2024-06-02 14:29:32.439 [main] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory - None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2024-06-02 14:29:32.454 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-02 14:29:32.464 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-02 14:29:32.466 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-02 14:29:32.466 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-02 14:29:32.503 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-02 14:29:32.503 [main] DEBUG o.s.b.w.s.c.ServletWebServerApplicationContext - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2024-06-02 14:29:32.504 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 963 ms
+2024-06-02 14:29:32.518 [main] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, corsFilter urls=[/*] order=2147483647
+2024-06-02 14:29:32.518 [main] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2024-06-02 14:29:32.536 [main] DEBUG o.s.b.w.s.f.OrderedRequestContextFilter - Filter 'requestContextFilter' configured for use
+2024-06-02 14:29:32.538 [main] DEBUG o.s.b.w.s.f.OrderedCharacterEncodingFilter - Filter 'characterEncodingFilter' configured for use
+2024-06-02 14:29:32.538 [main] DEBUG o.s.b.w.s.f.OrderedFormContentFilter - Filter 'formContentFilter' configured for use
+2024-06-02 14:29:36.413 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+2024-06-02 14:29:36.449 [main] DEBUG o.s.b.a.AutoConfigurationPackages - @EnableAutoConfiguration was declared on a class in the package 'Mizdooni'. Automatic @Repository and @Entity scanning is enabled.
+2024-06-02 14:29:36.506 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-02 14:29:36.541 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-02 14:29:36.578 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-02 14:29:36.658 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-02 14:29:36.669 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-06-02 14:29:36.689 [main] DEBUG o.s.b.a.l.ConditionEvaluationReportLogger - 
 
 
 ============================
@@ -980,38 +980,31 @@ Unconditional classes:
 
 
 
-2024-06-02 13:42:12.345 [main] INFO  Mizdooni.MizdooniApplication - Started MizdooniApplication in 10.422 seconds (process running for 11.176)
-2024-06-02 13:42:12.346 [main] DEBUG o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
-2024-06-02 13:42:12.348 [main] DEBUG o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
-2024-06-02 13:42:21.924 [SpringApplicationShutdownHook] DEBUG o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
-2024-06-02 13:42:21.925 [SpringApplicationShutdownHook] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3370f42, started on Sun Jun 02 13:42:02 EDT 2024
-2024-06-02 13:42:26.801 [main] INFO  Mizdooni.MizdooniApplication - Starting MizdooniApplication using Java 19.0.2 with PID 21832 (/home/razie/Desktop/React-Web-Application-Back-end-API/target/classes started by razie in /home/razie/Desktop/React-Web-Application-Back-end-API)
-2024-06-02 13:42:26.804 [main] INFO  Mizdooni.MizdooniApplication - No active profile set, falling back to 1 default profile: "default"
-2024-06-02 13:42:26.804 [main] DEBUG o.s.boot.SpringApplication - Loading source class Mizdooni.MizdooniApplication
-2024-06-02 13:42:26.870 [main] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3370f42
-2024-06-02 13:42:27.849 [main] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory - Code archive: /home/razie/.m2/repository/org/springframework/boot/spring-boot/3.2.5/spring-boot-3.2.5.jar
-2024-06-02 13:42:27.850 [main] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory - Code archive: /home/razie/.m2/repository/org/springframework/boot/spring-boot/3.2.5/spring-boot-3.2.5.jar
-2024-06-02 13:42:27.850 [main] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory - None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
-2024-06-02 13:42:27.866 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-06-02 13:42:27.876 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2024-06-02 13:42:27.877 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-06-02 13:42:27.877 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-06-02 13:42:27.917 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-06-02 13:42:27.917 [main] DEBUG o.s.b.w.s.c.ServletWebServerApplicationContext - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2024-06-02 13:42:27.918 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1047 ms
-2024-06-02 13:42:27.937 [main] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, corsFilter urls=[/*] order=2147483647
-2024-06-02 13:42:27.937 [main] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
-2024-06-02 13:42:27.959 [main] DEBUG o.s.b.w.s.f.OrderedRequestContextFilter - Filter 'requestContextFilter' configured for use
-2024-06-02 13:42:27.961 [main] DEBUG o.s.b.w.s.f.OrderedCharacterEncodingFilter - Filter 'characterEncodingFilter' configured for use
-2024-06-02 13:42:27.961 [main] DEBUG o.s.b.w.s.f.OrderedFormContentFilter - Filter 'formContentFilter' configured for use
-2024-06-02 13:42:32.260 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
-2024-06-02 13:42:32.280 [main] DEBUG o.s.b.a.AutoConfigurationPackages - @EnableAutoConfiguration was declared on a class in the package 'Mizdooni'. Automatic @Repository and @Entity scanning is enabled.
-2024-06-02 13:42:32.317 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2024-06-02 13:42:32.340 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2024-06-02 13:42:32.367 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2024-06-02 13:42:32.452 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2024-06-02 13:42:32.464 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
-2024-06-02 13:42:32.496 [main] DEBUG o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-06-02 14:29:36.692 [main] INFO  Mizdooni.MizdooniApplication - Started MizdooniApplication in 5.631 seconds (process running for 6.299)
+2024-06-02 14:29:36.693 [main] DEBUG o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2024-06-02 14:29:36.694 [main] DEBUG o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2024-06-02 14:31:07.303 [SpringApplicationShutdownHook] DEBUG o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2024-06-02 14:31:07.303 [SpringApplicationShutdownHook] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3370f42, started on Sun Jun 02 14:29:31 EDT 2024
+2024-06-02 14:42:11.517 [main] DEBUG o.s.boot.SpringApplication - Loading source class Mizdooni.MizdooniApplication
+2024-06-02 14:42:11.577 [main] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@51133c06
+2024-06-02 14:42:12.454 [main] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory - Code archive: /home/razie/.m2/repository/org/springframework/boot/spring-boot/3.2.5/spring-boot-3.2.5.jar
+2024-06-02 14:42:12.455 [main] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory - Code archive: /home/razie/.m2/repository/org/springframework/boot/spring-boot/3.2.5/spring-boot-3.2.5.jar
+2024-06-02 14:42:12.455 [main] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory - None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2024-06-02 14:42:12.473 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-02 14:42:12.526 [main] DEBUG o.s.b.w.s.c.ServletWebServerApplicationContext - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2024-06-02 14:42:12.527 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 949 ms
+2024-06-02 14:42:12.543 [main] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, corsFilter urls=[/*] order=2147483647
+2024-06-02 14:42:12.544 [main] DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2024-06-02 14:42:12.566 [main] DEBUG o.s.b.w.s.f.OrderedRequestContextFilter - Filter 'requestContextFilter' configured for use
+2024-06-02 14:42:12.568 [main] DEBUG o.s.b.w.s.f.OrderedCharacterEncodingFilter - Filter 'characterEncodingFilter' configured for use
+2024-06-02 14:42:12.568 [main] DEBUG o.s.b.w.s.f.OrderedFormContentFilter - Filter 'formContentFilter' configured for use
+2024-06-02 14:42:16.414 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 10 mappings in 'requestMappingHandlerMapping'
+2024-06-02 14:42:16.433 [main] DEBUG o.s.b.a.AutoConfigurationPackages - @EnableAutoConfiguration was declared on a class in the package 'Mizdooni'. Automatic @Repository and @Entity scanning is enabled.
+2024-06-02 14:42:16.461 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-02 14:42:16.478 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-02 14:42:16.498 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-02 14:42:16.568 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-06-02 14:42:16.581 [main] DEBUG o.s.b.a.l.ConditionEvaluationReportLogger - 
 
 
 ============================
@@ -1967,8 +1960,47 @@ Unconditional classes:
 
 
 
-2024-06-02 13:42:32.500 [main] INFO  Mizdooni.MizdooniApplication - Started MizdooniApplication in 6.14 seconds (process running for 6.785)
-2024-06-02 13:42:32.502 [main] DEBUG o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
-2024-06-02 13:42:32.505 [main] DEBUG o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
-2024-06-02 13:46:23.192 [SpringApplicationShutdownHook] DEBUG o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
-2024-06-02 13:46:23.192 [SpringApplicationShutdownHook] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3370f42, started on Sun Jun 02 13:42:26 EDT 2024
+2024-06-02 14:42:16.584 [main] DEBUG o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2024-06-02 14:42:16.585 [main] DEBUG o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2024-06-02 14:42:22.047 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-02 14:42:22.047 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-06-02 14:42:22.047 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-06-02 14:42:22.047 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-06-02 14:42:22.048 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3766911d
+2024-06-02 14:42:22.048 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@90e8df3
+2024-06-02 14:42:22.048 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-06-02 14:42:22.049 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-02 14:42:22.054 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/restaurants", parameters={}
+2024-06-02 14:42:22.062 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to Mizdooni.Controller.RestaurantController#getAll()
+2024-06-02 14:42:22.084 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-06-02 14:42:22.085 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Mizdooni.Model.Restaurant.Restaurant@11412d5, Mizdooni.Model.Restaurant.Restaurant@8c3a799, Mizdoon (truncated)...]
+2024-06-02 14:42:22.107 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-06-02 14:43:38.296 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/restaurants", parameters={}
+2024-06-02 14:43:38.297 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to Mizdooni.Controller.RestaurantController#getAll()
+2024-06-02 14:43:38.297 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-06-02 14:43:38.297 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Mizdooni.Model.Restaurant.Restaurant@11412d5, Mizdooni.Model.Restaurant.Restaurant@8c3a799, Mizdoon (truncated)...]
+2024-06-02 14:43:38.300 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-06-02 14:43:39.450 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/restaurants", parameters={}
+2024-06-02 14:43:39.450 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to Mizdooni.Controller.RestaurantController#getAll()
+2024-06-02 14:43:39.450 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-06-02 14:43:39.450 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Mizdooni.Model.Restaurant.Restaurant@11412d5, Mizdooni.Model.Restaurant.Restaurant@8c3a799, Mizdoon (truncated)...]
+2024-06-02 14:43:39.452 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-06-02 14:43:44.169 [SpringApplicationShutdownHook] DEBUG o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2024-06-02 14:43:44.169 [SpringApplicationShutdownHook] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@51133c06, started on Sun Jun 02 14:42:11 EDT 2024
+2024-06-02 14:45:26.252 [main] INFO  Mizdooni.MizdooniApplication - Starting MizdooniApplication using Java 19.0.2 with PID 24891 (/home/razie/Desktop/React-Web-Application-Back-end-API/target/classes started by razie in /home/razie/Desktop/React-Web-Application-Back-end-API)
+2024-06-02 14:45:26.254 [main] INFO  Mizdooni.MizdooniApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-02 14:45:27.287 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-02 14:45:27.297 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-02 14:45:27.299 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-02 14:45:27.300 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-02 14:45:27.339 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-02 14:45:27.340 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1019 ms
+2024-06-02 14:45:31.073 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-02 14:45:31.084 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-06-02 14:45:31.093 [main] INFO  Mizdooni.MizdooniApplication - Started MizdooniApplication in 5.3 seconds (process running for 5.857)
+2024-06-02 14:45:31.196 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-02 14:45:31.196 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-02 14:45:31.197 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-02 14:45:31.216 [http-nio-8080-exec-1] INFO  Mizdooni.Controller.AuthController - get all restaurants API requested
+2024-06-02 14:45:33.031 [http-nio-8080-exec-3] INFO  Mizdooni.Controller.AuthController - get all restaurants API requested
+2024-06-02 14:45:34.031 [http-nio-8080-exec-4] INFO  Mizdooni.Controller.AuthController - get all restaurants API requested
