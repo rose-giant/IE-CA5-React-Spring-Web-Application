@@ -1970,3 +1970,5 @@ Unconditional classes:
 2024-06-02 13:42:32.500 [main] INFO  Mizdooni.MizdooniApplication - Started MizdooniApplication in 6.14 seconds (process running for 6.785)
 2024-06-02 13:42:32.502 [main] DEBUG o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
 2024-06-02 13:42:32.505 [main] DEBUG o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2024-06-02 13:46:23.192 [SpringApplicationShutdownHook] DEBUG o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2024-06-02 13:46:23.192 [SpringApplicationShutdownHook] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3370f42, started on Sun Jun 02 13:42:26 EDT 2024

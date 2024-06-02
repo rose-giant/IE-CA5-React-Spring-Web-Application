@@ -5,6 +5,8 @@ import Mizdooni.Model.User.UserRepository;
 import Mizdooni.Model.User.UserViewLogin;
 import Mizdooni.Model.User.userView;
 import jakarta.servlet.http.HttpServletResponse;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.logging.LogLevel;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -12,10 +14,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
+import java.util.logging.Logger;
 
 @RestController
 @RequestMapping(path= "/",produces = MediaType.APPLICATION_JSON_VALUE)
 public class AuthController {
+    private static final Logger LOGGER = (Logger) LoggerFactory.getLogger(AuthController.class);
+
     @PostMapping("login")
     public User login(HttpServletResponse response,
                       @RequestBody UserViewLogin body) throws Exception {
@@ -24,6 +29,9 @@ public class AuthController {
         if(user == null) {
             response.setStatus(HttpServletResponse.SC_NOT_FOUND);
         }
+
+        LOGGER.info("login url was requested with username " +
+                body.getUsername() + " and password " + body.getPassword());
         return user;
     }
     @PostMapping("signup")
@@ -37,6 +45,9 @@ public class AuthController {
             userRepository.addUser(newUser);
             response.setStatus(HttpServletResponse.SC_CREATED);
         }
+
+        LOGGER.info("signup url was requested with username " +
+                newUser.username + " and password " + newUser.password);
         return newUser;
     }
 
