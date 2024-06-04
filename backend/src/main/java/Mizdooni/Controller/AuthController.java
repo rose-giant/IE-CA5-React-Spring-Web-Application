@@ -10,18 +10,22 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Map;
 
 @RestController
 @RequestMapping(path= "/",produces = MediaType.APPLICATION_JSON_VALUE)
 public class AuthController {
+    private static final Logger LOGGER = LoggerFactory.getLogger(AuthController.class);
     @PostMapping("login")
     public User login(HttpServletResponse response,
                       @RequestBody UserViewLogin body) throws Exception {
         UserRepository userRepo = UserRepository.getInstance();
         User user = userRepo.findByUsernameAndPassword(body.getUsername(), body.getPassword());
         if(user == null) {
+            LOGGER.error("Login failed for username: " + body.getUsername());
             response.setStatus(HttpServletResponse.SC_NOT_FOUND);
         }
         return user;
@@ -32,6 +36,7 @@ public class AuthController {
         UserRepository userRepository = UserRepository.getInstance();
         User newUser = userView.viewToUser();
         if(userRepository.findUserByUserName(newUser.username) != null){
+            LOGGER.error("Login failed for username: " + newUser.getUsername());
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
         }else {
             userRepository.addUser(newUser);
