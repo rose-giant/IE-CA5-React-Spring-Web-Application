@@ -2014,3 +2014,57 @@ Unconditional classes:
 2024-06-02 15:02:24.545 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1032 ms
 2024-06-02 15:02:28.141 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
 2024-06-02 15:02:28.149 [main] INFO  Mizdooni.MizdooniApplication - Started MizdooniApplication in 5.159 seconds (process running for 5.771)
+2024-06-06 14:41:38.878 [main] INFO  Mizdooni.MizdooniApplication - Starting MizdooniApplication using Java 19.0.2 with PID 19181 (/home/razie/Desktop/ie/React-Web-Application-Back-end-API/target/classes started by razie in /home/razie/Desktop/ie/React-Web-Application-Back-end-API)
+2024-06-06 14:41:38.879 [main] INFO  Mizdooni.MizdooniApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-06 14:41:40.525 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-06 14:41:40.534 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-06 14:41:40.536 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-06 14:41:40.536 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-06 14:41:40.574 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-06 14:41:40.575 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1642 ms
+2024-06-06 14:41:45.236 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-06 14:41:45.410 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-06-06 14:41:45.438 [main] INFO  Mizdooni.MizdooniApplication - Started MizdooniApplication in 7.415 seconds (process running for 8.938)
+2024-06-06 14:44:19.163 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-06 14:44:19.163 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-06 14:44:19.164 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-06 14:44:19.260 [http-nio-8080-exec-1] INFO  Mizdooni.Controller.AuthController - get all restaurants API requested
+2024-06-06 16:59:51.093 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [Mizdooni.MizdooniApplicationTests]: MizdooniApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-06 16:59:51.228 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration Mizdooni.MizdooniApplication for test class Mizdooni.MizdooniApplicationTests
+2024-06-06 16:59:51.912 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/razie/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/home/razie/.m2/repository/org/json/json/20201115/json-20201115.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-06-06 16:59:51.952 [main] INFO  Mizdooni.MizdooniApplicationTests - Starting MizdooniApplicationTests using Java 19.0.2 with PID 88775 (started by razie in /home/razie/Desktop/ie/React-Web-Application-Back-end-API)
+2024-06-06 16:59:51.954 [main] INFO  Mizdooni.MizdooniApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-06-06 16:59:57.806 [main] INFO  Mizdooni.MizdooniApplicationTests - Started MizdooniApplicationTests in 6.341 seconds (process running for 8.186)
+2024-06-06 17:04:36.484 [main] INFO  Mizdooni.MizdooniApplication - Starting MizdooniApplication using Java 19.0.2 with PID 89309 (/home/razie/Desktop/ie/React-Web-Application-Back-end-API/target/classes started by razie in /home/razie/Desktop/ie/React-Web-Application-Back-end-API)
+2024-06-06 17:04:36.486 [main] INFO  Mizdooni.MizdooniApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-06 17:04:37.749 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-06 17:04:37.758 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-06 17:04:37.760 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-06 17:04:37.760 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-06 17:04:37.826 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-06 17:04:37.827 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1277 ms
+2024-06-06 17:04:41.656 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-06 17:04:41.751 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-06-06 17:04:41.763 [main] INFO  Mizdooni.MizdooniApplication - Started MizdooniApplication in 5.718 seconds (process running for 6.286)
+2024-06-06 17:08:31.357 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [Mizdooni.MizdooniApplicationTests]: MizdooniApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-06 17:08:31.460 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration Mizdooni.MizdooniApplication for test class Mizdooni.MizdooniApplicationTests
+2024-06-06 17:08:31.775 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/razie/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/home/razie/.m2/repository/org/json/json/20201115/json-20201115.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-06-06 17:08:31.791 [main] INFO  Mizdooni.MizdooniApplicationTests - Starting MizdooniApplicationTests using Java 19.0.2 with PID 89548 (started by razie in /home/razie/Desktop/ie/React-Web-Application-Back-end-API)
+2024-06-06 17:08:31.792 [main] INFO  Mizdooni.MizdooniApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-06-06 17:08:36.755 [main] INFO  Mizdooni.MizdooniApplicationTests - Started MizdooniApplicationTests in 5.179 seconds (process running for 6.143)

@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Created-By: Maven JAR Plugin 3.3.0
+Build-Jdk-Spec: 19
+Implementation-Title: React-Web-Application-Back-end-API
+Implementation-Version: 0.0.1-SNAPSHOT
+Main-Class: Mizdooni.MizdooniApplication
+
